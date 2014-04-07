@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wpf.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Wpf.Fakes.ShimApp">
+            <summary>Shim type of Wpf.App</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimApp.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimApp.#ctor(Wpf.App)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimApp.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimApp.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimApp.Bind(System.Windows.Markup.IQueryAmbient)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimApp.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimApp.Constructor">
+            <summary>Sets the shim of App.App()</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimApp.InitializeComponent">
+            <summary>Sets the shim of App.InitializeComponent()</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimApp.Main">
+            <summary>Sets the shim of App.Main()</summary>
+        </member>
+        <member name="T:Wpf.Fakes.ShimApp.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimApp.AllInstances.InitializeComponent">
+            <summary>Sets the shim of App.InitializeComponent()</summary>
+        </member>
+        <member name="T:Wpf.Fakes.ShimMainWindow">
+            <summary>Shim type of Wpf.MainWindow</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.#ctor(Wpf.MainWindow)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.Bind(System.Windows.IInputElement)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.Bind(System.Windows.Markup.IAddChild)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.Bind(System.Windows.Media.Animation.IAnimatable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.Bind(System.Windows.IFrameworkInputElement)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.Bind(System.ComponentModel.ISupportInitialize)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.Bind(System.Windows.Markup.IComponentConnector)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Wpf.Fakes.ShimMainWindow.Bind(System.Windows.Markup.IQueryAmbient)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimMainWindow.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimMainWindow.Constructor">
+            <summary>Sets the shim of MainWindow.MainWindow()</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimMainWindow.InitializeComponent">
+            <summary>Sets the shim of MainWindow.InitializeComponent()</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimMainWindow.SystemWindowsMarkupIComponentConnectorConnectInt32Object">
+            <summary>Sets the shim of MainWindow.System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</summary>
+        </member>
+        <member name="T:Wpf.Fakes.ShimMainWindow.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimMainWindow.AllInstances.InitializeComponent">
+            <summary>Sets the shim of MainWindow.InitializeComponent()</summary>
+        </member>
+        <member name="P:Wpf.Fakes.ShimMainWindow.AllInstances.SystemWindowsMarkupIComponentConnectorConnectInt32Object">
+            <summary>Sets the shim of MainWindow.System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</summary>
+        </member>
+        <member name="T:Wpf.Fakes.StubApp">
+            <summary>Stub type of Wpf.App</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.InitializeStub">
+            <summary>Initializes a new instance of type StubApp</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnActivated(System.EventArgs)">
+            <summary>Sets the stub of Application.OnActivated(EventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnActivatedEventArgs">
+            <summary>Sets the stub of Application.OnActivated(EventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnDeactivated(System.EventArgs)">
+            <summary>Sets the stub of Application.OnDeactivated(EventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnDeactivatedEventArgs">
+            <summary>Sets the stub of Application.OnDeactivated(EventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnExit(System.Windows.ExitEventArgs)">
+            <summary>Sets the stub of Application.OnExit(ExitEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnExitExitEventArgs">
+            <summary>Sets the stub of Application.OnExit(ExitEventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)">
+            <summary>Sets the stub of Application.OnFragmentNavigation(FragmentNavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnFragmentNavigationFragmentNavigationEventArgs">
+            <summary>Sets the stub of Application.OnFragmentNavigation(FragmentNavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>Sets the stub of Application.OnLoadCompleted(NavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnLoadCompletedNavigationEventArgs">
+            <summary>Sets the stub of Application.OnLoadCompleted(NavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnNavigated(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>Sets the stub of Application.OnNavigated(NavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnNavigatedNavigationEventArgs">
+            <summary>Sets the stub of Application.OnNavigated(NavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)">
+            <summary>Sets the stub of Application.OnNavigating(NavigatingCancelEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnNavigatingNavigatingCancelEventArgs">
+            <summary>Sets the stub of Application.OnNavigating(NavigatingCancelEventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)">
+            <summary>Sets the stub of Application.OnNavigationFailed(NavigationFailedEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnNavigationFailedNavigationFailedEventArgs">
+            <summary>Sets the stub of Application.OnNavigationFailed(NavigationFailedEventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)">
+            <summary>Sets the stub of Application.OnNavigationProgress(NavigationProgressEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnNavigationProgressNavigationProgressEventArgs">
+            <summary>Sets the stub of Application.OnNavigationProgress(NavigationProgressEventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>Sets the stub of Application.OnNavigationStopped(NavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnNavigationStoppedNavigationEventArgs">
+            <summary>Sets the stub of Application.OnNavigationStopped(NavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)">
+            <summary>Sets the stub of Application.OnSessionEnding(SessionEndingCancelEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnSessionEndingSessionEndingCancelEventArgs">
+            <summary>Sets the stub of Application.OnSessionEnding(SessionEndingCancelEventArgs e)</summary>
+        </member>
+        <member name="M:Wpf.Fakes.StubApp.OnStartup(System.Windows.StartupEventArgs)">
+            <summary>Sets the stub of Application.OnStartup(StartupEventArgs e)</summary>
+        </member>
+        <member name="F:Wpf.Fakes.StubApp.OnStartupStartupEventArgs">
+            <summary>Sets the stub of Application.OnStartup(StartupEventArgs e)</summary>
+        </member>
+        <member name="P:Wpf.Fakes.StubApp.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Wpf.Fakes.StubApp.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Wpf.Fakes.StubApp.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,5 @@
+C:\Users\Ром\Documents\Visual Studio 2013\Projects\Wpf\PlayFieldModelTests\Fakes\Wpf.fakes : warning : Cannot generate stub for Wpf.MainWindow: type is sealed.
+C:\Users\Ром\Documents\Visual Studio 2013\Projects\Wpf\PlayFieldModelTests\Fakes\Wpf.fakes : warning : Cannot generate stub for Wpf.Properties.Resources: type is not visible to exported or assembly(Wpf.Fakes).
+C:\Users\Ром\Documents\Visual Studio 2013\Projects\Wpf\PlayFieldModelTests\Fakes\Wpf.fakes : warning : Cannot generate stub for Wpf.Properties.Settings: type is sealed.
+C:\Users\Ром\Documents\Visual Studio 2013\Projects\Wpf\PlayFieldModelTests\Fakes\Wpf.fakes : warning : Cannot generate shim for Wpf.Properties.Resources: type is not visible to exported or assembly(Wpf.Fakes).
+C:\Users\Ром\Documents\Visual Studio 2013\Projects\Wpf\PlayFieldModelTests\Fakes\Wpf.fakes : warning : Cannot generate shim for Wpf.Properties.Settings: type is not visible to exported or assembly(Wpf.Fakes).
