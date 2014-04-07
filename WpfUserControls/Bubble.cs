@@ -1,4 +1,4 @@
-﻿namespace PlayFieldModelTests
+namespace WpfUserControls
 {
     public class Bubble
     {

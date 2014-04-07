@@ -47,7 +47,13 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bubble.cs" />
+    <Compile Include="BubbleCollection.cs" />
+    <Compile Include="BubbleFactory.cs" />
+    <Compile Include="GameField.cs" />
     <Compile Include="IntToBrushConverter.cs" />
+    <Compile Include="IntToColorConverter.cs" />
+    <Compile Include="RelayCommand.cs" />
     <Compile Include="WrapHost.xaml.cs">
       <DependentUpon>WrapHost.xaml</DependentUpon>
     </Compile>

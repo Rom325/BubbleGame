@@ -35,7 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -51,7 +50,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Bubble.cs" />
     <Compile Include="BubblesExtensions.cs" />
     <Compile Include="GameFieldShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,9 +57,9 @@
     <Compile Include="BubblesExtensionsShould.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Wpf\Wpf.csproj">
-      <Project>{e4dc873d-f85f-4eb0-9ffc-068308096898}</Project>
-      <Name>Wpf</Name>
+    <ProjectReference Include="..\WpfUserControls\WpfUserControls.csproj">
+      <Project>{611c9b8d-5cbf-4047-b644-291da784a4fd}</Project>
+      <Name>WpfUserControls</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

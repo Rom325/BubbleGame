@@ -3,7 +3,9 @@ using System.Linq;
 
 namespace PlayFieldModelTests
 {
-    public static class BubblesExtensions
+	using WpfUserControls;
+
+	public static class BubblesExtensions
     {
         public static void DestroyAt(this Bubble[] bubbleCollection, params int[] indexes)
         {

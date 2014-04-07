@@ -4,7 +4,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace PlayFieldModelTests
 {
-    [TestClass]
+	using WpfUserControls;
+
+	[TestClass]
     public class BubblesExtensionsShould
     {
         [TestMethod]
