@@ -16,10 +16,18 @@ namespace WpfUserControls
 
 		public void Destroy(params int[] indexes)
 		{
-			foreach (int index in indexes)
+			// Используем 'монитор' из базового класса для потокобезопасности.
+			this.CheckReentrancy();
+
+			// Индексы должны быть отсортированы по убыванию, так как список автоматически изменяет свой размер.
+			foreach (int index in indexes.OrderByDescending(_ => _))
 			{
-				this.RemoveItem(index);
+				this.Items.RemoveAt(index);
 			}
+
+			this.OnPropertyChanged(new PropertyChangedEventArgs("Count"));
+			this.OnPropertyChanged(new PropertyChangedEventArgs("Item[]"));
+			this.OnCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
 		}
 	}
 }

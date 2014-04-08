@@ -8,7 +8,9 @@ using System.Windows.Media;
 
 namespace WpfUserControls
 {
-    public class IntToBrushConverter : IntToColorConverter
+	using System.Windows;
+
+	public class IntToBrushConverter : IntToColorConverter
     {
 		public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
 		{
@@ -18,11 +20,11 @@ namespace WpfUserControls
 				return null;
 			}
 
-			return new LinearGradientBrush(new GradientStopCollection
+			return new RadialGradientBrush(new GradientStopCollection
             {
-                new GradientStop {Color = (Color)color, Offset = 0.0},
-                new GradientStop {Color = Colors.White, Offset = 1.0}
-            });
+                new GradientStop {Color = (Color)color, Offset = 1.0},
+                new GradientStop {Color = Colors.White, Offset = 0.0}
+            }){GradientOrigin = new Point(0.25, 0.25)};
 		}
 
     }

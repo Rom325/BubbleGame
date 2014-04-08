@@ -1,23 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WpfUserControls
 {
-	using System.Windows;
-
 	/// <summary>
     /// Interaction logic for WrapHost.xaml
     /// </summary>
@@ -32,15 +17,13 @@ namespace WpfUserControls
         {
             InitializeComponent();
             Model = new GameField(8, 8);
-            Move = new RelayCommand(item =>
+            Move = new RelayCommand(container =>
 	            {
-					var listBoxItem = item as ContentPresenter;
-					int id = this.GameField.ItemContainerGenerator.IndexFromContainer(listBoxItem);
-					if (!this.Model.TryMove(id, Direction.Left))
-					{
-						this.Model.TryMove(id, Direction.Right);
-					}
+					var contentPresenter = container as ContentPresenter;
+					int position = this.GameField.ItemContainerGenerator.IndexFromContainer(contentPresenter);
+					int[] indexes = {position, position - 1, position + 1};
 
+					Model.Bubbles.Destroy(indexes);
 	            });
 
             DataContext = this;
