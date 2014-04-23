@@ -51,6 +51,7 @@
     <Compile Include="BubbleCollection.cs" />
     <Compile Include="BubbleFactory.cs" />
     <Compile Include="GameField.cs" />
+    <Compile Include="IBubbleFactory.cs" />
     <Compile Include="IntToBrushConverter.cs" />
     <Compile Include="IntToColorConverter.cs" />
     <Compile Include="RelayCommand.cs" />
@@ -93,6 +94,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WpfCustomControls\WpfCustomControls.csproj">
+      <Project>{3A9AC0A2-28FC-469D-9DD7-9E123602591E}</Project>
+      <Name>WpfCustomControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using System.Collections.Generic;
+using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
 
 namespace WpfUserControls
@@ -8,6 +10,8 @@ namespace WpfUserControls
     /// </summary>
     public partial class WrapHost : UserControl
     {
+        public const int MinChainLength = 3;
+
 		// Our model here
         public GameField Model { get; set; }
 
@@ -16,14 +20,23 @@ namespace WpfUserControls
         public WrapHost()
         {
             InitializeComponent();
-            Model = new GameField(8, 8);
+            Model = new GameField(8, 8, new BubbleFactory());
             Move = new RelayCommand(container =>
 	            {
-					var contentPresenter = container as ContentPresenter;
-					int position = this.GameField.ItemContainerGenerator.IndexFromContainer(contentPresenter);
-					int[] indexes = {position, position - 1, position + 1};
+                    var contentPresenter = container as ContentPresenter;
+	                if (contentPresenter == null)
+	                {
+	                    return;
+	                }
 
-					Model.Bubbles.Destroy(indexes);
+                    int currentPosition = this.GameField.ItemContainerGenerator.IndexFromContainer(contentPresenter);
+                    List<int> coloredChain = Model.GetColoredChain(currentPosition);
+                    if (coloredChain.Count < MinChainLength)
+                    {
+                        return;
+                    }
+
+                    Model.Bubbles.Destroy(coloredChain);
 	            });
 
             DataContext = this;

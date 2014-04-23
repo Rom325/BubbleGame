@@ -20,20 +20,5 @@ namespace PlayFieldModelTests
 
             Assert.AreEqual(BubbleFactory.DifferentColorsCount, colorsCount);
         }
-
-        [TestMethod]
-        public void TestMethod()
-        {
-            // Arrange
-            var bubbleCollection = new BubbleFactory();
-            Bubble[] bubbles = bubbleCollection.Create(StandartLength);
-            var collection = new BubbleCollection(bubbles);
-            
-            // Act
-            collection.RemoveAt(0);
-
-            // Assert
-            Assert.IsNull(collection[0]);
-        }
     }
 }

@@ -9,18 +9,22 @@ namespace WpfUserControls
 
 	public class BubbleCollection : ObservableCollection<Bubble>
 	{
-		public BubbleCollection(IEnumerable<Bubble> bubbles) : base(bubbles)
+	    private readonly IBubbleFactory _bubbleFactory;
+
+	    public BubbleCollection(uint length, IBubbleFactory bubbleFactory) : base(bubbleFactory.Create(length))
 		{
-           
+		    _bubbleFactory = bubbleFactory;
 		}
 
-		public void Destroy(params int[] indexes)
+	    public void Destroy(IEnumerable<int> indexes)
 		{
 			// Используем 'монитор' из базового класса для потокобезопасности.
 			this.CheckReentrancy();
 
-			// Индексы должны быть отсортированы по убыванию, так как список автоматически изменяет свой размер.
-			foreach (int index in indexes.OrderByDescending(_ => _))
+	        var arr = indexes as int[] ?? indexes.ToArray();
+	        
+            // Индексы должны быть отсортированы по убыванию, так как список автоматически изменяет свой размер.
+	        foreach (int index in arr.OrderByDescending(_ => _))
 			{
 				this.Items.RemoveAt(index);
 			}
@@ -28,6 +32,20 @@ namespace WpfUserControls
 			this.OnPropertyChanged(new PropertyChangedEventArgs("Count"));
 			this.OnPropertyChanged(new PropertyChangedEventArgs("Item[]"));
 			this.OnCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
+
+	        this.Refill(arr.Length);
 		}
+
+	    private void Refill(int length)
+	    {
+	        for (int i = 0; i < length; i++)
+	        {
+	            this.Items.Add(_bubbleFactory.NewRandomBubble());
+	        }
+
+            this.OnPropertyChanged(new PropertyChangedEventArgs("Count"));
+            this.OnPropertyChanged(new PropertyChangedEventArgs("Item[]"));
+            this.OnCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
+	    }
 	}
 }

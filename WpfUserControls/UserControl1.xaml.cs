@@ -20,7 +20,8 @@ namespace WpfUserControls
 	/// </summary>
 	public partial class UserControl1 : UserControl
 	{
-		// Our model here
+	    public const int MinChainLength = 3;
+	    // Our model here
 		public GameField Model { get; set; }
 
 		public ICommand Move { get; set; }
@@ -28,14 +29,19 @@ namespace WpfUserControls
 		public UserControl1()
 		{
 			InitializeComponent();
-			Model = new GameField(8, 8);
+			Model = new GameField(8, 8, new BubbleFactory());
 			Move = new RelayCommand(container =>
 			{
 				var contentPresenter = container as ContentPresenter;
-				int position = this.GameField.ItemContainerGenerator.IndexFromContainer(contentPresenter);
-				int[] indexes = { position, position - 1, position + 1 };
+			    if (contentPresenter == null) return;
+			    int currentPosition = this.GameField.ItemContainerGenerator.IndexFromContainer(contentPresenter);
+			    List<int> coloredChain = Model.GetColoredChain(currentPosition);
+			    if (coloredChain.Count < MinChainLength)
+			    {
+			        return;
+			    }
 
-				Model.Bubbles.Destroy(indexes);
+			    Model.Bubbles.Destroy(coloredChain);
 			});
 
 			DataContext = this;

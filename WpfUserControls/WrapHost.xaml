@@ -47,7 +47,7 @@
             <!--Указываем, что в качестве layout-а для отображения коллекции шариков будет использоваться WrapPanel-->
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel IsItemsHost="True" FlowDirection="RightToLeft" />
+                    <WrapPanel IsItemsHost="True" />
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             

@@ -94,6 +94,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WpfCustomControls\WpfCustomControls.csproj">
+      <Project>{3a9ac0a2-28fc-469d-9dd7-9e123602591e}</Project>
+      <Name>WpfCustomControls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WpfUserControls\WpfUserControls.csproj">
       <Project>{611c9b8d-5cbf-4047-b644-291da784a4fd}</Project>
       <Name>WpfUserControls</Name>

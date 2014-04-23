@@ -8,5 +8,6 @@
             <MenuItem Header="Новая игра"/>
         </Menu>
         <uc:WrapHost HorizontalAlignment="Center" Margin="0,70,0,0" />
+        <!--<uc:UserControl1 HorizontalAlignment="Center" Margin="0,70,0,0"></uc:UserControl1>-->
     </Grid>
 </Window>

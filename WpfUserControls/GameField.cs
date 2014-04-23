@@ -1,26 +1,28 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Documents;
+
 namespace WpfUserControls
 {
 	using System;
 
-	public enum Direction
-	{
-		Right,
-		Down,
-		Left,
-		Up
-	}
-
 	public class GameField
 	{
-		public GameField(byte rowsCount, byte colsCount)
+	    private readonly Movement[] _movements;
+
+	    public GameField(byte rowsCount, byte colsCount, IBubbleFactory bubbleFactory)
 		{
-			RowsCount = rowsCount;
+	        RowsCount = rowsCount;
 			ColsCount = colsCount;
 
-			// Потом можно произвести DI
-			var factory = new BubbleFactory();
-			var size = (uint)(rowsCount * colsCount);
-			Bubbles = new BubbleCollection(factory.Create(size));
+	        var size = (uint)(rowsCount * colsCount);
+	        Bubbles = new BubbleCollection(size, bubbleFactory);
+
+	        var moveRight = new Movement(+1             , i => !IsInLastColumn(i));
+	        var moveLeft  = new Movement(-1             , i => !IsInFirstColumn(i));
+	        var moveDown  = new Movement(+this.ColsCount, i => !IsOnLastRow(i));
+	        var moveUp    = new Movement(-this.ColsCount, i => !IsOnFirstRow(i));
+	        _movements = new []{moveDown, moveLeft, moveRight, moveUp};
 		}
 
 		public byte RowsCount { get; private set; }
@@ -29,81 +31,75 @@ namespace WpfUserControls
 
 		public BubbleCollection Bubbles { get; private set; }
 
+	    public List<int> GetColoredChain(int currentPosition)
+	    {
+	        var visited = new List<int>();
+	        var toVisit = new List<int>{currentPosition};
 
-		/// <summary>
-		/// Передвигает элемент на 1 клетку по указанному направлению.
-		/// </summary>
-		/// <param name="position">Номер элемента в массиве</param>
-		/// <param name="direction">Направление сдвига</param>
-		/// <returns>Возвращает true, в случае успешного передвижения, false если передвинуть нельзя</returns>
-		public bool TryMove(int position, Direction direction)
-		{
-			if (!CanMove(position, direction))
-			{
-				return false;
-			}
+	        while (toVisit.Count > 0)
+	        {
+	            var item = toVisit[0];
+	            visited.Add(item);
 
-			Move(position, direction);
-			return true;
-		}
+	            var tmpList = GetNeighbors(item, visited);
+	            toVisit.AddRange(tmpList);
+	            toVisit.RemoveAt(0);
+	        }
 
-		public bool CanMove(int position, Direction direction)
-		{
-			switch (direction)
-			{
-				case Direction.Right:
-					return !IsInLastColumn(position);
-				case Direction.Down:
-					return !IsOnLastRow(position);
-				case Direction.Left:
-					return !IsInFirstColumn(position);
-				case Direction.Up:
-					return !IsOnFirstRow(position);
-				default:
-					throw new ArgumentOutOfRangeException("direction");
-			}
-		}
+	        return visited.Distinct().ToList();
+	    }
 
-		protected bool IsOnFirstRow(int position)
+	    protected bool IsOnFirstRow(int position)
 		{
 			return position < this.ColsCount;
 		}
 
-		protected bool IsInFirstColumn(int position)
+	    protected bool IsInFirstColumn(int position)
 		{
 			return position % this.ColsCount == 0;
 		}
 
-		protected bool IsOnLastRow(int position)
+	    protected bool IsOnLastRow(int position)
 		{
 			return position >= (this.ColsCount*(this.RowsCount - 1));
 		}
 
-		protected bool IsInLastColumn(int position)
+	    protected bool IsInLastColumn(int position)
 		{
 			return position % this.ColsCount == this.ColsCount - 1;
 		}
 
-		private void Move(int position, Direction direction)
-		{
-			switch (direction)
-			{
-				case Direction.Right:
-					Bubbles.Move(position, position + 1);
-					break;
-				case Direction.Down:
-					Bubbles.Move(position, position + ColsCount);
-					break;
-				case Direction.Left:
-					Bubbles.Move(position, position - 1);
-					break;
-				case Direction.Up:
-					Bubbles.Move(position, position - ColsCount);
-					break;
-				default:
-					throw new ArgumentOutOfRangeException("direction");
-			}
-		}
-
+	    private IEnumerable<int> GetNeighbors(int currentPosition, List<int> visited)
+	    {
+            int currentColor = Bubbles[currentPosition].Color;
+	        return
+	            _movements
+	                .Select(m => m.Apply(currentPosition))
+	                .Where(pos => pos.HasValue && !visited.Contains(pos.Value) && pos.Value < Bubbles.Count && Bubbles[pos.Value].Color == currentColor)
+                    .Cast<int>()
+	                .ToList();
+	    }
 	}
+
+    internal class Movement
+    {
+        protected int Addition { get; private set; }
+        protected Func<int, bool> CanMoveFunc { get; private set; } 
+
+        public Movement(int addition, Func<int, bool> canMoveFunc)
+        {
+            Addition = addition;
+            CanMoveFunc = canMoveFunc;
+        }
+
+        public int? Apply(int position)
+        {
+            return CanApply(position) ? (int?)position + Addition : null;
+        }
+
+        public bool CanApply(int positon)
+        {
+            return CanMoveFunc(positon);
+        }
+    }
 }

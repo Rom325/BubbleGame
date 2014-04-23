@@ -1,4 +1,7 @@
-﻿using System.Dynamic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Dynamic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -20,49 +23,113 @@ namespace PlayFieldModelTests
             const byte cols = 8;
             const byte rows = 8;
             
-            var game = new GameField(rows, cols);
+            var game = new GameField(rows, cols, new BubbleFactory());
 
             Assert.AreEqual(cols * rows, game.Bubbles.Count);
             Assert.IsTrue(game.Bubbles.All(pos => pos != null));
         }
 
-        [TestMethod]
-        public void SwapElementsCorrectly()
-        {
-            int fromIndex = 0;
-            var game = new GameField(8, 8);
-            Bubble first = game.Bubbles[fromIndex];
+	    [TestMethod]
+	    public void Find3InARowCorrectly()
+	    {
+            // Arrange
+	        const int currentPosition = 4;
+	        int[] expected = {3, currentPosition, 5};
+	        IBubbleFactory fakeFactory = 
+                new WpfUserControls.
+                    Fakes.
+                    StubIBubbleFactory()
+                    {
+                        CreateUInt32 = _ => Enumerable.Range(0, 9)
+                                                      .Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3))
+                                                      .ToArray()
+                    };
 
-            game.TryMove(fromIndex, Direction.Right);
-            fromIndex++;
-            Assert.AreSame(first, game.Bubbles[fromIndex], MoveRightFailure);
+	        var gameField = new GameField(3, 3, fakeFactory);
+            
+            // Act
+	        List<int> result = gameField.GetColoredChain(currentPosition);
+            result.Sort();
 
-            game.TryMove(fromIndex , Direction.Down);
-            fromIndex += 8;
-            Assert.AreSame(first, game.Bubbles[fromIndex], MoveDownFailure);
+            // Assert
+            Assert.IsTrue(result.SequenceEqual(expected));
+	    }
 
-            game.TryMove(fromIndex, Direction.Left);
-            fromIndex--;
-            Assert.AreSame(first, game.Bubbles[fromIndex], MoveLeftFailure);
+	    [TestMethod]
+	    public void Find3InAColSuccessfully()
+	    {
+            // Arrange
+            const int currentPosition = 5;
+            int[] expected = { 2, currentPosition, 8 };
+            IBubbleFactory fakeFactory =
+                new WpfUserControls.
+                    Fakes.
+                    StubIBubbleFactory()
+                {
+                    CreateUInt32 = _ => Enumerable.Range(0, 9)
+                                                  .Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3))
+                                                  .ToArray()
+                };
 
-            game.TryMove(fromIndex, Direction.Up);
-            fromIndex -= 8;
-            Assert.AreSame(first, game.Bubbles[fromIndex], MoveUpFailure);
-        }
+            var gameField = new GameField(3, 3, fakeFactory);
 
-        [TestMethod]
-        public void HandleEdgeSwappingCasesSuccessfully()
-        {
-            int rightMost = 34;
-            int leftMost = 0;
+            // Act
+            List<int> result = gameField.GetColoredChain(currentPosition);
+            result.Sort();
 
-            var game = new GameField(5, 7);
+            // Assert
+            Assert.IsTrue(result.SequenceEqual(expected));   
+	    }
 
-            Assert.IsFalse(game.TryMove(rightMost, Direction.Right));
-            Assert.IsFalse(game.TryMove(rightMost, Direction.Down));
-            Assert.IsFalse(game.TryMove(leftMost, Direction.Left));
-            Assert.IsFalse(game.TryMove(leftMost, Direction.Up));
+	    [TestMethod]
+	    public void Find3NotInLineSuccessfully()
+	    {
+            const int currentPosition = 1;
+            int[] expected = { currentPosition, 4, 5 };
+            IBubbleFactory fakeFactory =
+                new WpfUserControls.
+                    Fakes.
+                    StubIBubbleFactory()
+                {
+                    CreateUInt32 = _ => Enumerable.Range(0, 9)
+                                                  .Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3))
+                                                  .ToArray()
+                };
 
-        }
+            var gameField = new GameField(3, 3, fakeFactory);
+
+            // Act
+            List<int> result = gameField.GetColoredChain(currentPosition);
+            result.Sort();
+
+            // Assert
+            Assert.IsTrue(result.SequenceEqual(expected));   
+	    }
+
+	    [TestMethod]
+	    public void FindManyNotInLineSuccessfully()
+	    {
+	        const int sideLength = 20;
+	        const int currentPosition = 1;
+	        int[] expected = { currentPosition, 21, 22, 41, 42, 61};
+	        IBubbleFactory fakeFactory =
+                new WpfUserControls.
+                    Fakes.
+                    StubIBubbleFactory()
+                {
+                    CreateUInt32 = _ => Enumerable.Range(0, sideLength * sideLength)
+                                                  .Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3))
+                                                  .ToArray()
+                };
+
+	        var gameField = new GameField(sideLength, sideLength, fakeFactory);
+
+            // Act
+            List<int> result = gameField.GetColoredChain(currentPosition);
+            result.Sort();
+
+            // Assert
+            Assert.IsTrue(result.SequenceEqual(expected));   
+	    }
     }
 }
