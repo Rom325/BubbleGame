@@ -35,11 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="System" />
-    <Reference Include="WpfUserControls.Fakes">
-      <HintPath>FakesAssemblies\WpfUserControls.Fakes.dll</HintPath>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1402.2112\lib\net40\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -61,13 +60,13 @@
     <Compile Include="BubblesExtensionsShould.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WpfUserControls\WpfUserControls.csproj">
-      <Project>{611c9b8d-5cbf-4047-b644-291da784a4fd}</Project>
-      <Name>WpfUserControls</Name>
+    <ProjectReference Include="..\ViewModelClassLibrary\ViewModelClassLibrary.csproj">
+      <Project>{7c4d735b-8fce-4760-8de2-c12fc9919200}</Project>
+      <Name>ViewModelClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Fakes Include="Fakes\WpfUserControls.fakes" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

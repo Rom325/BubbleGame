@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUserControls", "WpfUserC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFieldModelTests", "PlayFieldModelTests\PlayFieldModelTests.csproj", "{FB7DDC77-2FA5-4C78-9046-3C3384F55C20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomControls", "WpfCustomControls\WpfCustomControls.csproj", "{3A9AC0A2-28FC-469D-9DD7-9E123602591E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelClassLibrary", "ViewModelClassLibrary\ViewModelClassLibrary.csproj", "{7C4D735B-8FCE-4760-8DE2-C12FC9919200}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{FB7DDC77-2FA5-4C78-9046-3C3384F55C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB7DDC77-2FA5-4C78-9046-3C3384F55C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB7DDC77-2FA5-4C78-9046-3C3384F55C20}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A9AC0A2-28FC-469D-9DD7-9E123602591E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A9AC0A2-28FC-469D-9DD7-9E123602591E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A9AC0A2-28FC-469D-9DD7-9E123602591E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A9AC0A2-28FC-469D-9DD7-9E123602591E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C4D735B-8FCE-4760-8DE2-C12FC9919200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C4D735B-8FCE-4760-8DE2-C12FC9919200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C4D735B-8FCE-4760-8DE2-C12FC9919200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C4D735B-8FCE-4760-8DE2-C12FC9919200}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

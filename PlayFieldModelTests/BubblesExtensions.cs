@@ -1,10 +1,6 @@
-﻿using System;
-using System.Linq;
-
-namespace PlayFieldModelTests
+﻿namespace PlayFieldModelTests
 {
-	using WpfUserControls;
-
+    using ViewModelClassLibrary;
 	public static class BubblesExtensions
     {
         public static void DestroyAt(this Bubble[] bubbleCollection, params int[] indexes)

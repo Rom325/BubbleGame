@@ -1,9 +1,9 @@
-namespace WpfUserControls
-{
-	using System;
-	using System.Linq;
+using System;
+using System.Linq;
 
-	public class BubbleFactory : IBubbleFactory
+namespace ViewModelClassLibrary
+{
+    public class BubbleFactory : IBubbleFactory
 	{
 		public const byte DifferentColorsCount = 5;
 

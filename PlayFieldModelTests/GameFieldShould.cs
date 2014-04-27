@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Dynamic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Moq;
 
 namespace PlayFieldModelTests
 {
-	using WpfUserControls;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+	using ViewModelClassLibrary;
 
 	[TestClass]
     public class GameFieldShould
@@ -35,17 +33,12 @@ namespace PlayFieldModelTests
             // Arrange
 	        const int currentPosition = 4;
 	        int[] expected = {3, currentPosition, 5};
-	        IBubbleFactory fakeFactory = 
-                new WpfUserControls.
-                    Fakes.
-                    StubIBubbleFactory()
-                    {
-                        CreateUInt32 = _ => Enumerable.Range(0, 9)
-                                                      .Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3))
-                                                      .ToArray()
-                    };
+	        var fakeFactory = new Mock<IBubbleFactory>();
+	        fakeFactory
+                .Setup(ff => ff.Create(It.IsAny<uint>()))
+                .Returns(Enumerable.Range(0, 9).Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i%3)).ToArray());
 
-	        var gameField = new GameField(3, 3, fakeFactory);
+	        var gameField = new GameField(3, 3, fakeFactory.Object);
             
             // Act
 	        List<int> result = gameField.GetColoredChain(currentPosition);
@@ -61,17 +54,12 @@ namespace PlayFieldModelTests
             // Arrange
             const int currentPosition = 5;
             int[] expected = { 2, currentPosition, 8 };
-            IBubbleFactory fakeFactory =
-                new WpfUserControls.
-                    Fakes.
-                    StubIBubbleFactory()
-                {
-                    CreateUInt32 = _ => Enumerable.Range(0, 9)
-                                                  .Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3))
-                                                  .ToArray()
-                };
+            var fakeFactory = new Mock<IBubbleFactory>();
+            fakeFactory
+                .Setup(ff => ff.Create(It.IsAny<uint>()))
+                .Returns(Enumerable.Range(0, 9).Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3)).ToArray());
 
-            var gameField = new GameField(3, 3, fakeFactory);
+            var gameField = new GameField(3, 3, fakeFactory.Object);
 
             // Act
             List<int> result = gameField.GetColoredChain(currentPosition);
@@ -86,17 +74,12 @@ namespace PlayFieldModelTests
 	    {
             const int currentPosition = 1;
             int[] expected = { currentPosition, 4, 5 };
-            IBubbleFactory fakeFactory =
-                new WpfUserControls.
-                    Fakes.
-                    StubIBubbleFactory()
-                {
-                    CreateUInt32 = _ => Enumerable.Range(0, 9)
-                                                  .Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3))
-                                                  .ToArray()
-                };
+            var fakeFactory = new Mock<IBubbleFactory>();
+            fakeFactory
+                .Setup(ff => ff.Create(It.IsAny<uint>()))
+                .Returns(Enumerable.Range(0, 9).Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3)).ToArray());
 
-            var gameField = new GameField(3, 3, fakeFactory);
+            var gameField = new GameField(3, 3, fakeFactory.Object);
 
             // Act
             List<int> result = gameField.GetColoredChain(currentPosition);
@@ -112,17 +95,12 @@ namespace PlayFieldModelTests
 	        const int sideLength = 20;
 	        const int currentPosition = 1;
 	        int[] expected = { currentPosition, 21, 22, 41, 42, 61};
-	        IBubbleFactory fakeFactory =
-                new WpfUserControls.
-                    Fakes.
-                    StubIBubbleFactory()
-                {
-                    CreateUInt32 = _ => Enumerable.Range(0, sideLength * sideLength)
-                                                  .Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3))
-                                                  .ToArray()
-                };
+            var fakeFactory = new Mock<IBubbleFactory>();
+            fakeFactory
+                .Setup(ff => ff.Create(It.IsAny<uint>()))
+                .Returns(Enumerable.Range(0, sideLength * sideLength).Select(i => (expected.Contains(i)) ? new Bubble(3) : new Bubble(i % 3)).ToArray());
 
-	        var gameField = new GameField(sideLength, sideLength, fakeFactory);
+            var gameField = new GameField(sideLength, sideLength, fakeFactory.Object);
 
             // Act
             List<int> result = gameField.GetColoredChain(currentPosition);

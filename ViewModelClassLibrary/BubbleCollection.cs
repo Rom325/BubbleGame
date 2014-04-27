@@ -1,13 +1,12 @@
-namespace WpfUserControls
-{
-	using System.Collections;
-	using System.Collections.Generic;
-	using System.Collections.ObjectModel;
-	using System.Collections.Specialized;
-	using System.ComponentModel;
-	using System.Linq;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.ComponentModel;
+using System.Linq;
 
-	public class BubbleCollection : ObservableCollection<Bubble>
+namespace ViewModelClassLibrary
+{
+    public class BubbleCollection : ObservableCollection<Bubble>
 	{
 	    private readonly IBubbleFactory _bubbleFactory;
 

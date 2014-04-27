@@ -1,18 +1,40 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Documents;
 
-namespace WpfUserControls
+namespace ViewModelClassLibrary
 {
-	using System;
-
-	public class GameField
+    public class GameField
 	{
-	    private readonly Movement[] _movements;
+        internal class Movement
+        {
+            protected int Addition { get; private set; }
+            protected Func<int, bool> CanMoveFunc { get; private set; }
 
-	    public GameField(byte rowsCount, byte colsCount, IBubbleFactory bubbleFactory)
+            public Movement(int addition, Func<int, bool> canMoveFunc)
+            {
+                Addition = addition;
+                CanMoveFunc = canMoveFunc;
+            }
+
+            public int? Apply(int position)
+            {
+                return CanApply(position) ? (int?)position + Addition : null;
+            }
+
+            public bool CanApply(int positon)
+            {
+                return CanMoveFunc(positon);
+            }
+        }
+
+	    private Movement[] _movements;
+        private IBubbleFactory _bubbleFactory;
+
+        public GameField(byte rowsCount, byte colsCount, IBubbleFactory bubbleFactory)
 		{
-	        RowsCount = rowsCount;
+            _bubbleFactory = bubbleFactory;
+            RowsCount = rowsCount;
 			ColsCount = colsCount;
 
 	        var size = (uint)(rowsCount * colsCount);
@@ -79,27 +101,20 @@ namespace WpfUserControls
                     .Cast<int>()
 	                .ToList();
 	    }
+
+        public void StartNew(byte cols, byte rows)
+        {
+            RowsCount = rows;
+            ColsCount = cols;
+
+            var size = (uint)(rows * cols);
+            Bubbles = new BubbleCollection(size, _bubbleFactory);
+
+            var moveRight = new Movement(+1, i => !IsInLastColumn(i));
+            var moveLeft = new Movement(-1, i => !IsInFirstColumn(i));
+            var moveDown = new Movement(+this.ColsCount, i => !IsOnLastRow(i));
+            var moveUp = new Movement(-this.ColsCount, i => !IsOnFirstRow(i));
+            _movements = new[] { moveDown, moveLeft, moveRight, moveUp };
+        }
 	}
-
-    internal class Movement
-    {
-        protected int Addition { get; private set; }
-        protected Func<int, bool> CanMoveFunc { get; private set; } 
-
-        public Movement(int addition, Func<int, bool> canMoveFunc)
-        {
-            Addition = addition;
-            CanMoveFunc = canMoveFunc;
-        }
-
-        public int? Apply(int position)
-        {
-            return CanApply(position) ? (int?)position + Addition : null;
-        }
-
-        public bool CanApply(int positon)
-        {
-            return CanMoveFunc(positon);
-        }
-    }
 }

@@ -1,9 +1,9 @@
-﻿namespace WpfUserControls
-{
-	using System;
-	using System.Windows.Input;
+﻿using System;
+using System.Windows.Input;
 
-	public class RelayCommand : ICommand
+namespace ViewModelClassLibrary
+{
+    public class RelayCommand : ICommand
 	{
 		private readonly Action<object> action;
 

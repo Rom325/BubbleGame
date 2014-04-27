@@ -1,10 +1,8 @@
-﻿using System;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace PlayFieldModelTests
+﻿namespace PlayFieldModelTests
 {
-	using WpfUserControls;
+    using System.Linq;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using ViewModelClassLibrary;
 
 	[TestClass]
     public class BubblesExtensionsShould

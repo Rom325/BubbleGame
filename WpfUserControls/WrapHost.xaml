@@ -3,64 +3,75 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:wpfUserControls="clr-namespace:WpfUserControls"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <DockPanel Margin="10, 10, 10, 10">
-        <ItemsControl ItemsSource="{Binding Model.Bubbles}" Name="GameField">
+             xmlns:viewModelClassLibrary="clr-namespace:ViewModelClassLibrary;assembly=ViewModelClassLibrary"
+             mc:Ignorable="d">
+    <ItemsControl ItemsSource="{Binding Model.Bubbles}" Name="GameField" Width="{Binding CalculatedWidth}">
+        <!--Убираем scroll viewer, по умолчанию добавляемый в ListBox, переопределяя свойство Template-->
+        <ItemsControl.Template>
+            <ControlTemplate>
+                <ItemsPresenter/>
+            </ControlTemplate>
+        </ItemsControl.Template>
             
-            <!--Убираем scroll viewer, по умолчанию добавляемый в ListBox, переопределяя свойство Template-->
-            <ItemsControl.Template>
-                <ControlTemplate>
-                    <ItemsPresenter/>
-                </ControlTemplate>
-            </ItemsControl.Template>
+        <!--Ресурсы, здесь будем помещаеть стили и конверетеры-->
+        <ItemsControl.Resources>
+            <wpfUserControls:IntToBrushConverter x:Key="IntToBrushConverter"/>
+            <wpfUserControls:IntToColorConverter x:Key="IntToColorConverter"/>
+            <Style TargetType="Button">
+                <!--Ставим в true, чтобы избежать зависимости от текущей темы windows при отображении кнопки -->
+                <Setter Property="OverridesDefaultStyle" Value="True"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid Cursor="Hand">
+                                <Ellipse Fill="{Binding Path=Color, Converter= {StaticResource IntToBrushConverter}}" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <DropShadowEffect ShadowDepth="0" Color="{Binding Path=Color, Converter= {StaticResource IntToColorConverter}}" Opacity="1" BlurRadius="20"/>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                    
+                    <!-- Анимирует эллипс при нажатии. -->
+                    <EventTrigger RoutedEvent="wpfUserControls:WrapHost.BubbleClicked">
+                        <BeginStoryboard Name="ButtonStoryBoard">
+                            <Storyboard>
+                                <DoubleAnimation
+                                    Storyboard.TargetProperty="Opacity"
+                                    From="1.0" To="0.0" Duration="0:0:1.5" 
+                                    AutoReverse="True" RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Style.Triggers>
+            </Style>
+        </ItemsControl.Resources>
             
-            <!--Ресурсы, здесь будем помещаеть стили и конверетеры-->
-            <ItemsControl.Resources>
-                <wpfUserControls:IntToBrushConverter x:Key="IntToBrushConverter"/>
-                <wpfUserControls:IntToColorConverter x:Key="IntToColorConverter"/>
-                <Style TargetType="Button">
-                    <!--Ставим в true, чтобы избежать зависимости от текущей темы windows при отображении кнопки -->
-                    <Setter Property="OverridesDefaultStyle" Value="True"/>
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Grid Cursor="Hand">
-                                    <Ellipse Fill="{Binding Path=Color, Converter= {StaticResource IntToBrushConverter}}" />
-                                </Grid>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Effect">
-                                <Setter.Value>
-                                    <DropShadowEffect ShadowDepth="0" Color="{Binding Path=Color, Converter= {StaticResource IntToColorConverter}}" Opacity="1" BlurRadius="20"/>
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </ItemsControl.Resources>
+        <!--Указываем, что в качестве layout-а для отображения коллекции шариков будет использоваться WrapPanel-->
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <WrapPanel IsItemsHost="True" />
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
             
-            <!--Указываем, что в качестве layout-а для отображения коллекции шариков будет использоваться WrapPanel-->
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel IsItemsHost="True" />
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-            
-            <!--Шаблон для отображения шарика-->
-            <ItemsControl.ItemTemplate>
-                <DataTemplate DataType="wpfUserControls:Bubble">
-                    <Button  
-                        Width="30" 
-                        Height="30" 
-                        Command="{Binding DataContext.Move, ElementName=GameField}" 
-                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"></Button>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
-    </DockPanel>
+        <!--Шаблон для отображения шарика-->
+        <ItemsControl.ItemTemplate>
+            <DataTemplate DataType="viewModelClassLibrary:Bubble">
+                <Button  
+                    Width="30" 
+                    Height="30"
+                    Click="ButtonBase_OnClick">
+                </Button>
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+    </ItemsControl>
+
 </UserControl>
