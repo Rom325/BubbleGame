@@ -1,0 +1,2465 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WpfUserControls.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:WpfUserControls.Fakes.ShimBubble">
+            <summary>Shim type of WpfUserControls.Bubble</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubble.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubble.#ctor(WpfUserControls.Bubble)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubble.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubble.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubble.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubble.ColorGet">
+            <summary>Sets the shim of Bubble.get_Color()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubble.ColorSetInt32">
+            <summary>Sets the shim of Bubble.set_Color(Int32 value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubble.ConstructorInt32">
+            <summary>Sets the shim of Bubble.Bubble(Int32 color)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimBubble.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubble.AllInstances.ColorGet">
+            <summary>Sets the shim of Bubble.get_Color()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubble.AllInstances.ColorSetInt32">
+            <summary>Sets the shim of Bubble.set_Color(Int32 value)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimBubbleCollection">
+            <summary>Shim type of WpfUserControls.BubbleCollection</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.#ctor(WpfUserControls.BubbleCollection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.Collections.Specialized.INotifyCollectionChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.Collections.IList)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.ICollection{WpfUserControls.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.IEnumerable{WpfUserControls.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.IList{WpfUserControls.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.IReadOnlyCollection{WpfUserControls.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.IReadOnlyList{WpfUserControls.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleCollection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleCollection.ConstructorUInt32IBubbleFactory">
+            <summary>Sets the shim of BubbleCollection.BubbleCollection(UInt32 length, IBubbleFactory bubbleFactory)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleCollection.DestroyIEnumerableOfInt32">
+            <summary>Sets the shim of BubbleCollection.Destroy(IEnumerable`1&lt;Int32&gt; indexes)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleCollection.RefillInt32">
+            <summary>Sets the shim of BubbleCollection.Refill(Int32 length)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleCollection._Destroyb__0Int32">
+            <summary>Sets the shim of BubbleCollection.&lt;Destroy&gt;b__0(Int32 _)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimBubbleCollection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleCollection.AllInstances.DestroyIEnumerableOfInt32">
+            <summary>Sets the shim of BubbleCollection.Destroy(IEnumerable`1&lt;Int32&gt; indexes)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleCollection.AllInstances.RefillInt32">
+            <summary>Sets the shim of BubbleCollection.Refill(Int32 length)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimBubbleFactory">
+            <summary>Shim type of WpfUserControls.BubbleFactory</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleFactory.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleFactory.#ctor(WpfUserControls.BubbleFactory)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubbleFactory.Bind(WpfUserControls.IBubbleFactory)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleFactory.Constructor">
+            <summary>Sets the shim of BubbleFactory.BubbleFactory()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleFactory.CreateUInt32">
+            <summary>Sets the shim of BubbleFactory.Create(UInt32 collectionLength)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleFactory.NewRandomBubble">
+            <summary>Sets the shim of BubbleFactory.NewRandomBubble()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleFactory._Createb__0Int32">
+            <summary>Sets the shim of BubbleFactory.&lt;Create&gt;b__0(Int32 _)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimBubbleFactory.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleFactory.AllInstances.CreateUInt32">
+            <summary>Sets the shim of BubbleFactory.Create(UInt32 collectionLength)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleFactory.AllInstances.NewRandomBubble">
+            <summary>Sets the shim of BubbleFactory.NewRandomBubble()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubbleFactory.AllInstances._Createb__0Int32">
+            <summary>Sets the shim of BubbleFactory.&lt;Create&gt;b__0(Int32 _)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs">
+            <summary>Shim type of WpfUserControls.BubblesDestroyedEventArgs</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.#ctor(WpfUserControls.BubblesDestroyedEventArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.ConstructorInt32">
+            <summary>Sets the shim of BubblesDestroyedEventArgs.BubblesDestroyedEventArgs(Int32 count)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.CountGet">
+            <summary>Sets the shim of BubblesDestroyedEventArgs.get_Count()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.CountSetInt32">
+            <summary>Sets the shim of BubblesDestroyedEventArgs.set_Count(Int32 value)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.AllInstances.CountGet">
+            <summary>Sets the shim of BubblesDestroyedEventArgs.get_Count()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimBubblesDestroyedEventArgs.AllInstances.CountSetInt32">
+            <summary>Sets the shim of BubblesDestroyedEventArgs.set_Count(Int32 value)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimGameField">
+            <summary>Shim type of WpfUserControls.GameField</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimGameField.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimGameField.#ctor(WpfUserControls.GameField)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimGameField.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimGameField.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.BubblesGet">
+            <summary>Sets the shim of GameField.get_Bubbles()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.BubblesSetBubbleCollection">
+            <summary>Sets the shim of GameField.set_Bubbles(BubbleCollection value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.ColsCountGet">
+            <summary>Sets the shim of GameField.get_ColsCount()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.ColsCountSetByte">
+            <summary>Sets the shim of GameField.set_ColsCount(Byte value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.ConstructorByteByteIBubbleFactory">
+            <summary>Sets the shim of GameField.GameField(Byte rowsCount, Byte colsCount, IBubbleFactory bubbleFactory)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.GetColoredChainInt32">
+            <summary>Sets the shim of GameField.GetColoredChain(Int32 currentPosition)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.GetNeighborsInt32ListOfInt32">
+            <summary>Sets the shim of GameField.GetNeighbors(Int32 currentPosition, List`1&lt;Int32&gt; visited)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.IsInFirstColumnInt32">
+            <summary>Sets the shim of GameField.IsInFirstColumn(Int32 position)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.IsInLastColumnInt32">
+            <summary>Sets the shim of GameField.IsInLastColumn(Int32 position)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.IsOnFirstRowInt32">
+            <summary>Sets the shim of GameField.IsOnFirstRow(Int32 position)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.IsOnLastRowInt32">
+            <summary>Sets the shim of GameField.IsOnLastRow(Int32 position)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.RowsCountGet">
+            <summary>Sets the shim of GameField.get_RowsCount()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.RowsCountSetByte">
+            <summary>Sets the shim of GameField.set_RowsCount(Byte value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField._ctorb__0Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__0(Int32 i)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField._ctorb__1Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__1(Int32 i)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField._ctorb__2Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__2(Int32 i)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField._ctorb__3Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__3(Int32 i)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimGameField.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.BubblesGet">
+            <summary>Sets the shim of GameField.get_Bubbles()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.BubblesSetBubbleCollection">
+            <summary>Sets the shim of GameField.set_Bubbles(BubbleCollection value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.ColsCountGet">
+            <summary>Sets the shim of GameField.get_ColsCount()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.ColsCountSetByte">
+            <summary>Sets the shim of GameField.set_ColsCount(Byte value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.GetColoredChainInt32">
+            <summary>Sets the shim of GameField.GetColoredChain(Int32 currentPosition)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.GetNeighborsInt32ListOfInt32">
+            <summary>Sets the shim of GameField.GetNeighbors(Int32 currentPosition, List`1&lt;Int32&gt; visited)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.IsInFirstColumnInt32">
+            <summary>Sets the shim of GameField.IsInFirstColumn(Int32 position)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.IsInLastColumnInt32">
+            <summary>Sets the shim of GameField.IsInLastColumn(Int32 position)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.IsOnFirstRowInt32">
+            <summary>Sets the shim of GameField.IsOnFirstRow(Int32 position)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.IsOnLastRowInt32">
+            <summary>Sets the shim of GameField.IsOnLastRow(Int32 position)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.RowsCountGet">
+            <summary>Sets the shim of GameField.get_RowsCount()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances.RowsCountSetByte">
+            <summary>Sets the shim of GameField.set_RowsCount(Byte value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances._ctorb__0Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__0(Int32 i)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances._ctorb__1Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__1(Int32 i)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances._ctorb__2Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__2(Int32 i)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimGameField.AllInstances._ctorb__3Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__3(Int32 i)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimIntToBrushConverter">
+            <summary>Shim type of WpfUserControls.IntToBrushConverter</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToBrushConverter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToBrushConverter.#ctor(WpfUserControls.IntToBrushConverter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToBrushConverter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToBrushConverter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToBrushConverter.Bind(System.Windows.Data.IValueConverter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToBrushConverter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToBrushConverter.Constructor">
+            <summary>Sets the shim of IntToBrushConverter.IntToBrushConverter()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToBrushConverter.ConvertObjectTypeObjectCultureInfo">
+            <summary>Sets the shim of IntToBrushConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimIntToBrushConverter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToBrushConverter.AllInstances.ConvertObjectTypeObjectCultureInfo">
+            <summary>Sets the shim of IntToBrushConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimIntToColorConverter">
+            <summary>Shim type of WpfUserControls.IntToColorConverter</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToColorConverter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToColorConverter.#ctor(WpfUserControls.IntToColorConverter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToColorConverter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToColorConverter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimIntToColorConverter.Bind(System.Windows.Data.IValueConverter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToColorConverter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToColorConverter.Constructor">
+            <summary>Sets the shim of IntToColorConverter.IntToColorConverter()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToColorConverter.ConvertBackObjectTypeObjectCultureInfo">
+            <summary>Sets the shim of IntToColorConverter.ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToColorConverter.ConvertObjectTypeObjectCultureInfo">
+            <summary>Sets the shim of IntToColorConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimIntToColorConverter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToColorConverter.AllInstances.ConvertBackObjectTypeObjectCultureInfo">
+            <summary>Sets the shim of IntToColorConverter.ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimIntToColorConverter.AllInstances.ConvertObjectTypeObjectCultureInfo">
+            <summary>Sets the shim of IntToColorConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimRelayCommand">
+            <summary>Shim type of WpfUserControls.RelayCommand</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimRelayCommand.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimRelayCommand.#ctor(WpfUserControls.RelayCommand)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimRelayCommand.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimRelayCommand.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimRelayCommand.Bind(System.Windows.Input.ICommand)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.CanExecuteChangedAddEventHandler">
+            <summary>Sets the shim of RelayCommand.add_CanExecuteChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.CanExecuteChangedRemoveEventHandler">
+            <summary>Sets the shim of RelayCommand.remove_CanExecuteChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.CanExecuteObject">
+            <summary>Sets the shim of RelayCommand.CanExecute(Object parameter)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.ConstructorActionOfObject">
+            <summary>Sets the shim of RelayCommand.RelayCommand(Action`1&lt;Object&gt; action)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.ExecuteObject">
+            <summary>Sets the shim of RelayCommand.Execute(Object parameter)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimRelayCommand.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.AllInstances.CanExecuteChangedAddEventHandler">
+            <summary>Sets the shim of RelayCommand.add_CanExecuteChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.AllInstances.CanExecuteChangedRemoveEventHandler">
+            <summary>Sets the shim of RelayCommand.remove_CanExecuteChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.AllInstances.CanExecuteObject">
+            <summary>Sets the shim of RelayCommand.CanExecute(Object parameter)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimRelayCommand.AllInstances.ExecuteObject">
+            <summary>Sets the shim of RelayCommand.Execute(Object parameter)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimScoreView">
+            <summary>Shim type of WpfUserControls.ScoreView</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.#ctor(WpfUserControls.ScoreView)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.Bind(System.Windows.IInputElement)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.Bind(System.Windows.Markup.IAddChild)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.Bind(System.Windows.Media.Animation.IAnimatable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.Bind(System.Windows.IFrameworkInputElement)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.Bind(System.ComponentModel.ISupportInitialize)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.Bind(System.Windows.Markup.IComponentConnector)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimScoreView.Bind(System.Windows.Markup.IQueryAmbient)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimScoreView.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimScoreView.Constructor">
+            <summary>Sets the shim of ScoreView.ScoreView()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimScoreView.InitializeComponent">
+            <summary>Sets the shim of ScoreView.InitializeComponent()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimScoreView.SystemWindowsMarkupIComponentConnectorConnectInt32Object">
+            <summary>Sets the shim of ScoreView.System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimScoreView.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimScoreView.AllInstances.InitializeComponent">
+            <summary>Sets the shim of ScoreView.InitializeComponent()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimScoreView.AllInstances.SystemWindowsMarkupIComponentConnectorConnectInt32Object">
+            <summary>Sets the shim of ScoreView.System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimWrapHost">
+            <summary>Shim type of WpfUserControls.WrapHost</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.#ctor(WpfUserControls.WrapHost)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.Bind(System.Windows.IInputElement)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.Bind(System.Windows.Markup.IAddChild)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.Bind(System.Windows.Media.Animation.IAnimatable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.Bind(System.Windows.IFrameworkInputElement)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.Bind(System.ComponentModel.ISupportInitialize)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.Bind(System.Windows.Markup.IComponentConnector)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.ShimWrapHost.Bind(System.Windows.Markup.IQueryAmbient)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.BubblesDestroyedAddEventHandlerOfBubblesDestroyedEventArgs">
+            <summary>Sets the shim of WrapHost.add_BubblesDestroyed(EventHandler`1&lt;BubblesDestroyedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.BubblesDestroyedRemoveEventHandlerOfBubblesDestroyedEventArgs">
+            <summary>Sets the shim of WrapHost.remove_BubblesDestroyed(EventHandler`1&lt;BubblesDestroyedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.ConstructorByteByte">
+            <summary>Sets the shim of WrapHost.WrapHost(Byte rowsCount, Byte colsCount)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.InitializeComponent">
+            <summary>Sets the shim of WrapHost.InitializeComponent()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.ModelGet">
+            <summary>Sets the shim of WrapHost.get_Model()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.ModelSetGameField">
+            <summary>Sets the shim of WrapHost.set_Model(GameField value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.MoveGet">
+            <summary>Sets the shim of WrapHost.get_Move()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.MoveSetICommand">
+            <summary>Sets the shim of WrapHost.set_Move(ICommand value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.OnBubblesDestroyedBubblesDestroyedEventArgs">
+            <summary>Sets the shim of WrapHost.OnBubblesDestroyed(BubblesDestroyedEventArgs e)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.SystemWindowsMarkupIComponentConnectorConnectInt32Object">
+            <summary>Sets the shim of WrapHost.System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost._ctorb__0Object">
+            <summary>Sets the shim of WrapHost.&lt;.ctor&gt;b__0(Object container)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.ShimWrapHost.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances.BubblesDestroyedAddEventHandlerOfBubblesDestroyedEventArgs">
+            <summary>Sets the shim of WrapHost.add_BubblesDestroyed(EventHandler`1&lt;BubblesDestroyedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances.BubblesDestroyedRemoveEventHandlerOfBubblesDestroyedEventArgs">
+            <summary>Sets the shim of WrapHost.remove_BubblesDestroyed(EventHandler`1&lt;BubblesDestroyedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances.InitializeComponent">
+            <summary>Sets the shim of WrapHost.InitializeComponent()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances.ModelGet">
+            <summary>Sets the shim of WrapHost.get_Model()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances.ModelSetGameField">
+            <summary>Sets the shim of WrapHost.set_Model(GameField value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances.MoveGet">
+            <summary>Sets the shim of WrapHost.get_Move()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances.MoveSetICommand">
+            <summary>Sets the shim of WrapHost.set_Move(ICommand value)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances.OnBubblesDestroyedBubblesDestroyedEventArgs">
+            <summary>Sets the shim of WrapHost.OnBubblesDestroyed(BubblesDestroyedEventArgs e)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances.SystemWindowsMarkupIComponentConnectorConnectInt32Object">
+            <summary>Sets the shim of WrapHost.System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.ShimWrapHost.AllInstances._ctorb__0Object">
+            <summary>Sets the shim of WrapHost.&lt;.ctor&gt;b__0(Object container)</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubBubble">
+            <summary>Stub type of WpfUserControls.Bubble</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubble.#ctor(System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubble.InitializeStub">
+            <summary>Initializes a new instance of type StubBubble</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubble.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubble.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubble.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubBubbleCollection">
+            <summary>Stub type of WpfUserControls.BubbleCollection</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleCollection.#ctor(System.UInt32,WpfUserControls.IBubbleFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleCollection.ClearItems">
+            <summary>Sets the stub of ObservableCollection`1.ClearItems()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubBubbleCollection.ClearItems01">
+            <summary>Sets the stub of ObservableCollection`1.ClearItems()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleCollection.InitializeStub">
+            <summary>Initializes a new instance of type StubBubbleCollection</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleCollection.InsertItem(System.Int32,WpfUserControls.Bubble)">
+            <summary>Sets the stub of ObservableCollection`1.InsertItem(Int32 index, !0 item)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubBubbleCollection.InsertItemInt32Bubble">
+            <summary>Sets the stub of ObservableCollection`1.InsertItem(Int32 index, !0 item)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleCollection.MoveItem(System.Int32,System.Int32)">
+            <summary>Sets the stub of ObservableCollection`1.MoveItem(Int32 oldIndex, Int32 newIndex)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubBubbleCollection.MoveItemInt32Int32">
+            <summary>Sets the stub of ObservableCollection`1.MoveItem(Int32 oldIndex, Int32 newIndex)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleCollection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>Sets the stub of ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubBubbleCollection.OnCollectionChangedNotifyCollectionChangedEventArgs">
+            <summary>Sets the stub of ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleCollection.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>Sets the stub of ObservableCollection`1.OnPropertyChanged(PropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubBubbleCollection.OnPropertyChangedPropertyChangedEventArgs">
+            <summary>Sets the stub of ObservableCollection`1.OnPropertyChanged(PropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleCollection.RemoveItem(System.Int32)">
+            <summary>Sets the stub of ObservableCollection`1.RemoveItem(Int32 index)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubBubbleCollection.RemoveItemInt32">
+            <summary>Sets the stub of ObservableCollection`1.RemoveItem(Int32 index)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleCollection.SetItem(System.Int32,WpfUserControls.Bubble)">
+            <summary>Sets the stub of ObservableCollection`1.SetItem(Int32 index, !0 item)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubBubbleCollection.SetItemInt32Bubble">
+            <summary>Sets the stub of ObservableCollection`1.SetItem(Int32 index, !0 item)</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubbleCollection.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubbleCollection.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubbleCollection.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubBubbleFactory">
+            <summary>Stub type of WpfUserControls.BubbleFactory</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleFactory.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubbleFactory.InitializeStub">
+            <summary>Initializes a new instance of type StubBubbleFactory</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubbleFactory.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubbleFactory.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubbleFactory.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubBubblesDestroyedEventArgs">
+            <summary>Stub type of WpfUserControls.BubblesDestroyedEventArgs</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubblesDestroyedEventArgs.#ctor(System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubBubblesDestroyedEventArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubBubblesDestroyedEventArgs</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubblesDestroyedEventArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubblesDestroyedEventArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubBubblesDestroyedEventArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubGameField">
+            <summary>Stub type of WpfUserControls.GameField</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubGameField.#ctor(System.Byte,System.Byte,WpfUserControls.IBubbleFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubGameField.InitializeStub">
+            <summary>Initializes a new instance of type StubGameField</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubGameField.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubGameField.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubGameField.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubIBubbleFactory">
+            <summary>Stub type of WpfUserControls.IBubbleFactory</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIBubbleFactory.#ctor">
+            <summary>Initializes a new instance of type StubIBubbleFactory</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubIBubbleFactory.CreateUInt32">
+            <summary>Sets the stub of IBubbleFactory.Create(UInt32 collectionLength)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubIBubbleFactory.NewRandomBubble">
+            <summary>Sets the stub of IBubbleFactory.NewRandomBubble()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIBubbleFactory.wuc::WpfUserControls#IBubbleFactory#Create(System.UInt32)">
+            <summary>Sets the stub of IBubbleFactory.Create(UInt32 collectionLength)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIBubbleFactory.wuc::WpfUserControls#IBubbleFactory#NewRandomBubble">
+            <summary>Sets the stub of IBubbleFactory.NewRandomBubble()</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubIntToBrushConverter">
+            <summary>Stub type of WpfUserControls.IntToBrushConverter</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIntToBrushConverter.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIntToBrushConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>Sets the stub of IntToBrushConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIntToBrushConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>Sets the stub of IntToColorConverter.ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubIntToBrushConverter.ConvertBackObjectTypeObjectCultureInfo">
+            <summary>Sets the stub of IntToColorConverter.ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubIntToBrushConverter.ConvertObjectTypeObjectCultureInfo">
+            <summary>Sets the stub of IntToBrushConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIntToBrushConverter.InitializeStub">
+            <summary>Initializes a new instance of type StubIntToBrushConverter</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubIntToBrushConverter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubIntToBrushConverter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubIntToBrushConverter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubIntToColorConverter">
+            <summary>Stub type of WpfUserControls.IntToColorConverter</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIntToColorConverter.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIntToColorConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>Sets the stub of IntToColorConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIntToColorConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>Sets the stub of IntToColorConverter.ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubIntToColorConverter.ConvertBackObjectTypeObjectCultureInfo">
+            <summary>Sets the stub of IntToColorConverter.ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubIntToColorConverter.ConvertObjectTypeObjectCultureInfo">
+            <summary>Sets the stub of IntToColorConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubIntToColorConverter.InitializeStub">
+            <summary>Initializes a new instance of type StubIntToColorConverter</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubIntToColorConverter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubIntToColorConverter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubIntToColorConverter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubRelayCommand">
+            <summary>Stub type of WpfUserControls.RelayCommand</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubRelayCommand.#ctor(System.Action{System.Object})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubRelayCommand.InitializeStub">
+            <summary>Initializes a new instance of type StubRelayCommand</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubRelayCommand.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubRelayCommand.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubRelayCommand.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubScoreView">
+            <summary>Stub type of WpfUserControls.ScoreView</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.AddChild(System.Object)">
+            <summary>Sets the stub of ContentControl.AddChild(Object value)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.AddChildObject">
+            <summary>Sets the stub of ContentControl.AddChild(Object value)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.AddText(System.String)">
+            <summary>Sets the stub of ContentControl.AddText(String text)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.AddTextString">
+            <summary>Sets the stub of ContentControl.AddText(String text)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.ArrangeOverride(System.Windows.Size)">
+            <summary>Sets the stub of Control.ArrangeOverride(Size arrangeBounds)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.ArrangeOverrideSize">
+            <summary>Sets the stub of Control.ArrangeOverride(Size arrangeBounds)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.BeginInit">
+            <summary>Sets the stub of FrameworkElement.BeginInit()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.BeginInit01">
+            <summary>Sets the stub of FrameworkElement.BeginInit()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.EndInit">
+            <summary>Sets the stub of FrameworkElement.EndInit()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.EndInit01">
+            <summary>Sets the stub of FrameworkElement.EndInit()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.GetLayoutClip(System.Windows.Size)">
+            <summary>Sets the stub of FrameworkElement.GetLayoutClip(Size layoutSlotSize)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.GetLayoutClipSize">
+            <summary>Sets the stub of FrameworkElement.GetLayoutClip(Size layoutSlotSize)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.GetUIParentCore">
+            <summary>Sets the stub of FrameworkElement.GetUIParentCore()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.GetUIParentCore01">
+            <summary>Sets the stub of FrameworkElement.GetUIParentCore()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.GetVisualChild(System.Int32)">
+            <summary>Sets the stub of FrameworkElement.GetVisualChild(Int32 index)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.GetVisualChildInt32">
+            <summary>Sets the stub of FrameworkElement.GetVisualChild(Int32 index)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.HandlesScrollingGet">
+            <summary>Sets the stub of Control.get_HandlesScrolling()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.HasEffectiveKeyboardFocusGet">
+            <summary>Sets the stub of UIElement.get_HasEffectiveKeyboardFocus()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.HitTestCore(System.Windows.Media.GeometryHitTestParameters)">
+            <summary>Sets the stub of UIElement.HitTestCore(GeometryHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.HitTestCore(System.Windows.Media.PointHitTestParameters)">
+            <summary>Sets the stub of UIElement.HitTestCore(PointHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.HitTestCoreGeometryHitTestParameters">
+            <summary>Sets the stub of UIElement.HitTestCore(GeometryHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.HitTestCorePointHitTestParameters">
+            <summary>Sets the stub of UIElement.HitTestCore(PointHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.InitializeStub">
+            <summary>Initializes a new instance of type StubScoreView</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.IsEnabledCoreGet">
+            <summary>Sets the stub of UIElement.get_IsEnabledCore()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.LogicalChildrenGet">
+            <summary>Sets the stub of ContentControl.get_LogicalChildren()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.MeasureOverride(System.Windows.Size)">
+            <summary>Sets the stub of Control.MeasureOverride(Size constraint)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.MeasureOverrideSize">
+            <summary>Sets the stub of Control.MeasureOverride(Size constraint)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnAccessKey(AccessKeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnAccessKeyAccessKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnAccessKey(AccessKeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnApplyTemplate">
+            <summary>Sets the stub of FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnApplyTemplate01">
+            <summary>Sets the stub of FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnChildDesiredSizeChanged(System.Windows.UIElement)">
+            <summary>Sets the stub of UIElement.OnChildDesiredSizeChanged(UIElement child)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnChildDesiredSizeChangedUIElement">
+            <summary>Sets the stub of UIElement.OnChildDesiredSizeChanged(UIElement child)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnContentChanged(System.Object,System.Object)">
+            <summary>Sets the stub of ContentControl.OnContentChanged(Object oldContent, Object newContent)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnContentChangedObjectObject">
+            <summary>Sets the stub of ContentControl.OnContentChanged(Object oldContent, Object newContent)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnContentStringFormatChanged(System.String,System.String)">
+            <summary>Sets the stub of ContentControl.OnContentStringFormatChanged(String oldContentStringFormat, String newContentStringFormat)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnContentStringFormatChangedStringString">
+            <summary>Sets the stub of ContentControl.OnContentStringFormatChanged(String oldContentStringFormat, String newContentStringFormat)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnContentTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)">
+            <summary>Sets the stub of ContentControl.OnContentTemplateChanged(DataTemplate oldContentTemplate, DataTemplate newContentTemplate)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnContentTemplateChangedDataTemplateDataTemplate">
+            <summary>Sets the stub of ContentControl.OnContentTemplateChanged(DataTemplate oldContentTemplate, DataTemplate newContentTemplate)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnContentTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector,System.Windows.Controls.DataTemplateSelector)">
+            <summary>Sets the stub of ContentControl.OnContentTemplateSelectorChanged(DataTemplateSelector oldContentTemplateSelector, DataTemplateSelector newContentTemplateSelector)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnContentTemplateSelectorChangedDataTemplateSelectorDataTemplateSelector">
+            <summary>Sets the stub of ContentControl.OnContentTemplateSelectorChanged(DataTemplateSelector oldContentTemplateSelector, DataTemplateSelector newContentTemplateSelector)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnContextMenuClosing(System.Windows.Controls.ContextMenuEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnContextMenuClosing(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnContextMenuClosingContextMenuEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnContextMenuClosing(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnContextMenuOpening(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnContextMenuOpeningContextMenuEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnContextMenuOpening(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnCreateAutomationPeer">
+            <summary>Sets the stub of UserControl.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnCreateAutomationPeer01">
+            <summary>Sets the stub of UserControl.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnDragEnter(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnDragEnterDragEventArgs">
+            <summary>Sets the stub of UIElement.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnDragLeave(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnDragLeaveDragEventArgs">
+            <summary>Sets the stub of UIElement.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnDragOver(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnDragOverDragEventArgs">
+            <summary>Sets the stub of UIElement.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnDrop(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnDropDragEventArgs">
+            <summary>Sets the stub of UIElement.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnGiveFeedback(System.Windows.GiveFeedbackEventArgs)">
+            <summary>Sets the stub of UIElement.OnGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Sets the stub of UIElement.OnGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnGotFocusRoutedEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnGotKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnGotMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnGotMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnGotMouseCaptureMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnGotMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnGotStylusCapture(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnGotStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnGotStylusCaptureStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnGotStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnGotTouchCapture(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnGotTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnGotTouchCaptureTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnGotTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnInitialized(System.EventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnInitialized(EventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnInitializedEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnInitialized(EventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsKeyboardFocusWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnIsKeyboardFocusWithinChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsKeyboardFocusWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnIsKeyboardFocusedChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsKeyboardFocusedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnIsKeyboardFocusedChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsKeyboardFocusedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnIsMouseCaptureWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsMouseCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnIsMouseCaptureWithinChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsMouseCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnIsMouseCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsMouseCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnIsMouseCapturedChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsMouseCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnIsMouseDirectlyOverChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsMouseDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnIsMouseDirectlyOverChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsMouseDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnIsStylusCaptureWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsStylusCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnIsStylusCaptureWithinChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsStylusCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnIsStylusCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsStylusCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnIsStylusCapturedChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsStylusCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnIsStylusDirectlyOverChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsStylusDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnIsStylusDirectlyOverChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsStylusDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnKeyDownKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnKeyUp(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnKeyUpKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnLostFocusRoutedEventArgs">
+            <summary>Sets the stub of UIElement.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnLostKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnLostMouseCaptureMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnLostStylusCapture(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnLostStylusCaptureStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnLostStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnLostTouchCapture(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnLostTouchCaptureTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnLostTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnManipulationBoundaryFeedback(System.Windows.Input.ManipulationBoundaryFeedbackEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationBoundaryFeedback(ManipulationBoundaryFeedbackEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnManipulationBoundaryFeedbackManipulationBoundaryFeedbackEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationBoundaryFeedback(ManipulationBoundaryFeedbackEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnManipulationCompleted(System.Windows.Input.ManipulationCompletedEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnManipulationCompletedManipulationCompletedEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnManipulationDelta(System.Windows.Input.ManipulationDeltaEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnManipulationDeltaManipulationDeltaEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnManipulationInertiaStarting(System.Windows.Input.ManipulationInertiaStartingEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationInertiaStarting(ManipulationInertiaStartingEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnManipulationInertiaStartingManipulationInertiaStartingEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationInertiaStarting(ManipulationInertiaStartingEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnManipulationStarted(System.Windows.Input.ManipulationStartedEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnManipulationStartedManipulationStartedEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnManipulationStarting(System.Windows.Input.ManipulationStartingEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationStarting(ManipulationStartingEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnManipulationStartingManipulationStartingEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationStarting(ManipulationStartingEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseDoubleClickMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseEnterMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseLeaveMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseLeftButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseLeftButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseMoveMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseRightButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseRightButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnMouseWheelMouseWheelEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewDragEnter(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewDragEnterDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewDragLeave(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewDragLeaveDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewDragOver(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewDragOverDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewDrop(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewDropDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewGiveFeedback(System.Windows.GiveFeedbackEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewGotKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewKeyDownKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewKeyUp(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewKeyUpKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewLostKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnPreviewMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseDoubleClickMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnPreviewMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseLeftButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseLeftButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseMoveMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseRightButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseRightButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewMouseWheelMouseWheelEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewQueryContinueDrag(System.Windows.QueryContinueDragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewQueryContinueDragQueryContinueDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusButtonDown(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusButtonDownStylusButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusButtonUp(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusButtonUpStylusButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusDown(System.Windows.Input.StylusDownEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusDownStylusDownEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusInAirMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusInAirMoveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusInRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusInRangeStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusMoveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusOutOfRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusOutOfRangeStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusSystemGesture(System.Windows.Input.StylusSystemGestureEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusSystemGestureStylusSystemGestureEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusUp(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewStylusUpStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewTextInputTextCompositionEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewTouchDown(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewTouchDownTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewTouchMove(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewTouchMoveTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPreviewTouchUp(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPreviewTouchUpTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnPropertyChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnQueryContinueDrag(System.Windows.QueryContinueDragEventArgs)">
+            <summary>Sets the stub of UIElement.OnQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnQueryContinueDragQueryContinueDragEventArgs">
+            <summary>Sets the stub of UIElement.OnQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnQueryCursor(System.Windows.Input.QueryCursorEventArgs)">
+            <summary>Sets the stub of UIElement.OnQueryCursor(QueryCursorEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnQueryCursorQueryCursorEventArgs">
+            <summary>Sets the stub of UIElement.OnQueryCursor(QueryCursorEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnRender(System.Windows.Media.DrawingContext)">
+            <summary>Sets the stub of UIElement.OnRender(DrawingContext drawingContext)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnRenderDrawingContext">
+            <summary>Sets the stub of UIElement.OnRender(DrawingContext drawingContext)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+            <summary>Sets the stub of FrameworkElement.OnRenderSizeChanged(SizeChangedInfo sizeInfo)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnRenderSizeChangedSizeChangedInfo">
+            <summary>Sets the stub of FrameworkElement.OnRenderSizeChanged(SizeChangedInfo sizeInfo)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStyleChanged(System.Windows.Style,System.Windows.Style)">
+            <summary>Sets the stub of FrameworkElement.OnStyleChanged(Style oldStyle, Style newStyle)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStyleChangedStyleStyle">
+            <summary>Sets the stub of FrameworkElement.OnStyleChanged(Style oldStyle, Style newStyle)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusButtonDown(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusButtonDownStylusButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusButtonUp(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusButtonUpStylusButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusDown(System.Windows.Input.StylusDownEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusDownStylusDownEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusEnter(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusEnter(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusEnterStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusEnter(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusInAirMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusInAirMoveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusInRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusInRangeStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusLeave(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusLeave(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusLeaveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusLeave(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusMoveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusOutOfRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusOutOfRangeStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusSystemGesture(System.Windows.Input.StylusSystemGestureEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusSystemGestureStylusSystemGestureEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnStylusUp(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnStylusUpStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)">
+            <summary>Sets the stub of Control.OnTemplateChanged(ControlTemplate oldTemplate, ControlTemplate newTemplate)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnTemplateChangedControlTemplateControlTemplate">
+            <summary>Sets the stub of Control.OnTemplateChanged(ControlTemplate oldTemplate, ControlTemplate newTemplate)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of UIElement.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnTextInputTextCompositionEventArgs">
+            <summary>Sets the stub of UIElement.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnToolTipClosing(System.Windows.Controls.ToolTipEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnToolTipClosing(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnToolTipClosingToolTipEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnToolTipClosing(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnToolTipOpening(System.Windows.Controls.ToolTipEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnToolTipOpening(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnToolTipOpeningToolTipEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnToolTipOpening(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnTouchDown(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnTouchDownTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnTouchEnter(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchEnter(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnTouchEnterTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchEnter(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnTouchLeave(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchLeave(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnTouchLeaveTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchLeave(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnTouchMove(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnTouchMoveTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnTouchUp(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnTouchUpTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)">
+            <summary>Sets the stub of Visual.OnVisualChildrenChanged(DependencyObject visualAdded, DependencyObject visualRemoved)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnVisualChildrenChangedDependencyObjectDependencyObject">
+            <summary>Sets the stub of Visual.OnVisualChildrenChanged(DependencyObject visualAdded, DependencyObject visualRemoved)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.OnVisualParentChanged(System.Windows.DependencyObject)">
+            <summary>Sets the stub of FrameworkElement.OnVisualParentChanged(DependencyObject oldParent)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.OnVisualParentChangedDependencyObject">
+            <summary>Sets the stub of FrameworkElement.OnVisualParentChanged(DependencyObject oldParent)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.ParentLayoutInvalidated(System.Windows.UIElement)">
+            <summary>Sets the stub of FrameworkElement.ParentLayoutInvalidated(UIElement child)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.ParentLayoutInvalidatedUIElement">
+            <summary>Sets the stub of FrameworkElement.ParentLayoutInvalidated(UIElement child)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.ShouldSerializeContent">
+            <summary>Sets the stub of ContentControl.ShouldSerializeContent()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.ShouldSerializeContent01">
+            <summary>Sets the stub of ContentControl.ShouldSerializeContent()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.ShouldSerializeProperty(System.Windows.DependencyProperty)">
+            <summary>Sets the stub of DependencyObject.ShouldSerializeProperty(DependencyProperty dp)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.ShouldSerializePropertyDependencyProperty">
+            <summary>Sets the stub of DependencyObject.ShouldSerializeProperty(DependencyProperty dp)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubScoreView.ToString">
+            <summary>Sets the stub of Control.ToString()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.ToString01">
+            <summary>Sets the stub of Control.ToString()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubScoreView.VisualChildrenCountGet">
+            <summary>Sets the stub of FrameworkElement.get_VisualChildrenCount()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubScoreView.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubScoreView.HandlesScrolling">
+            <summary>Sets the stub of Control.get_HandlesScrolling()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubScoreView.HasEffectiveKeyboardFocus">
+            <summary>Sets the stub of UIElement.get_HasEffectiveKeyboardFocus()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubScoreView.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubScoreView.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubScoreView.IsEnabledCore">
+            <summary>Sets the stub of UIElement.get_IsEnabledCore()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubScoreView.LogicalChildren">
+            <summary>Sets the stub of ContentControl.get_LogicalChildren()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubScoreView.VisualChildrenCount">
+            <summary>Sets the stub of FrameworkElement.get_VisualChildrenCount()</summary>
+        </member>
+        <member name="T:WpfUserControls.Fakes.StubWrapHost">
+            <summary>Stub type of WpfUserControls.WrapHost</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.#ctor(System.Byte,System.Byte)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.AddChild(System.Object)">
+            <summary>Sets the stub of ContentControl.AddChild(Object value)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.AddChildObject">
+            <summary>Sets the stub of ContentControl.AddChild(Object value)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.AddText(System.String)">
+            <summary>Sets the stub of ContentControl.AddText(String text)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.AddTextString">
+            <summary>Sets the stub of ContentControl.AddText(String text)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.ArrangeOverride(System.Windows.Size)">
+            <summary>Sets the stub of Control.ArrangeOverride(Size arrangeBounds)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.ArrangeOverrideSize">
+            <summary>Sets the stub of Control.ArrangeOverride(Size arrangeBounds)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.BeginInit">
+            <summary>Sets the stub of FrameworkElement.BeginInit()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.BeginInit01">
+            <summary>Sets the stub of FrameworkElement.BeginInit()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.EndInit">
+            <summary>Sets the stub of FrameworkElement.EndInit()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.EndInit01">
+            <summary>Sets the stub of FrameworkElement.EndInit()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.GetLayoutClip(System.Windows.Size)">
+            <summary>Sets the stub of FrameworkElement.GetLayoutClip(Size layoutSlotSize)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.GetLayoutClipSize">
+            <summary>Sets the stub of FrameworkElement.GetLayoutClip(Size layoutSlotSize)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.GetUIParentCore">
+            <summary>Sets the stub of FrameworkElement.GetUIParentCore()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.GetUIParentCore01">
+            <summary>Sets the stub of FrameworkElement.GetUIParentCore()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.GetVisualChild(System.Int32)">
+            <summary>Sets the stub of FrameworkElement.GetVisualChild(Int32 index)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.GetVisualChildInt32">
+            <summary>Sets the stub of FrameworkElement.GetVisualChild(Int32 index)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.HandlesScrollingGet">
+            <summary>Sets the stub of Control.get_HandlesScrolling()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.HasEffectiveKeyboardFocusGet">
+            <summary>Sets the stub of UIElement.get_HasEffectiveKeyboardFocus()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.HitTestCore(System.Windows.Media.GeometryHitTestParameters)">
+            <summary>Sets the stub of UIElement.HitTestCore(GeometryHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.HitTestCore(System.Windows.Media.PointHitTestParameters)">
+            <summary>Sets the stub of UIElement.HitTestCore(PointHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.HitTestCoreGeometryHitTestParameters">
+            <summary>Sets the stub of UIElement.HitTestCore(GeometryHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.HitTestCorePointHitTestParameters">
+            <summary>Sets the stub of UIElement.HitTestCore(PointHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.InitializeStub">
+            <summary>Initializes a new instance of type StubWrapHost</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.IsEnabledCoreGet">
+            <summary>Sets the stub of UIElement.get_IsEnabledCore()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.LogicalChildrenGet">
+            <summary>Sets the stub of ContentControl.get_LogicalChildren()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.MeasureOverride(System.Windows.Size)">
+            <summary>Sets the stub of Control.MeasureOverride(Size constraint)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.MeasureOverrideSize">
+            <summary>Sets the stub of Control.MeasureOverride(Size constraint)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnAccessKey(AccessKeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnAccessKeyAccessKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnAccessKey(AccessKeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnApplyTemplate">
+            <summary>Sets the stub of FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnApplyTemplate01">
+            <summary>Sets the stub of FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnBubblesDestroyed(WpfUserControls.BubblesDestroyedEventArgs)">
+            <summary>Sets the stub of WrapHost.OnBubblesDestroyed(BubblesDestroyedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnBubblesDestroyedBubblesDestroyedEventArgs">
+            <summary>Sets the stub of WrapHost.OnBubblesDestroyed(BubblesDestroyedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnChildDesiredSizeChanged(System.Windows.UIElement)">
+            <summary>Sets the stub of UIElement.OnChildDesiredSizeChanged(UIElement child)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnChildDesiredSizeChangedUIElement">
+            <summary>Sets the stub of UIElement.OnChildDesiredSizeChanged(UIElement child)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnContentChanged(System.Object,System.Object)">
+            <summary>Sets the stub of ContentControl.OnContentChanged(Object oldContent, Object newContent)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnContentChangedObjectObject">
+            <summary>Sets the stub of ContentControl.OnContentChanged(Object oldContent, Object newContent)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnContentStringFormatChanged(System.String,System.String)">
+            <summary>Sets the stub of ContentControl.OnContentStringFormatChanged(String oldContentStringFormat, String newContentStringFormat)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnContentStringFormatChangedStringString">
+            <summary>Sets the stub of ContentControl.OnContentStringFormatChanged(String oldContentStringFormat, String newContentStringFormat)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnContentTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)">
+            <summary>Sets the stub of ContentControl.OnContentTemplateChanged(DataTemplate oldContentTemplate, DataTemplate newContentTemplate)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnContentTemplateChangedDataTemplateDataTemplate">
+            <summary>Sets the stub of ContentControl.OnContentTemplateChanged(DataTemplate oldContentTemplate, DataTemplate newContentTemplate)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnContentTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector,System.Windows.Controls.DataTemplateSelector)">
+            <summary>Sets the stub of ContentControl.OnContentTemplateSelectorChanged(DataTemplateSelector oldContentTemplateSelector, DataTemplateSelector newContentTemplateSelector)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnContentTemplateSelectorChangedDataTemplateSelectorDataTemplateSelector">
+            <summary>Sets the stub of ContentControl.OnContentTemplateSelectorChanged(DataTemplateSelector oldContentTemplateSelector, DataTemplateSelector newContentTemplateSelector)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnContextMenuClosing(System.Windows.Controls.ContextMenuEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnContextMenuClosing(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnContextMenuClosingContextMenuEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnContextMenuClosing(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnContextMenuOpening(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnContextMenuOpeningContextMenuEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnContextMenuOpening(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnCreateAutomationPeer">
+            <summary>Sets the stub of UserControl.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnCreateAutomationPeer01">
+            <summary>Sets the stub of UserControl.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnDragEnter(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnDragEnterDragEventArgs">
+            <summary>Sets the stub of UIElement.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnDragLeave(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnDragLeaveDragEventArgs">
+            <summary>Sets the stub of UIElement.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnDragOver(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnDragOverDragEventArgs">
+            <summary>Sets the stub of UIElement.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnDrop(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnDropDragEventArgs">
+            <summary>Sets the stub of UIElement.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnGiveFeedback(System.Windows.GiveFeedbackEventArgs)">
+            <summary>Sets the stub of UIElement.OnGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Sets the stub of UIElement.OnGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnGotFocusRoutedEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnGotKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnGotMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnGotMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnGotMouseCaptureMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnGotMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnGotStylusCapture(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnGotStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnGotStylusCaptureStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnGotStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnGotTouchCapture(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnGotTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnGotTouchCaptureTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnGotTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnInitialized(System.EventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnInitialized(EventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnInitializedEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnInitialized(EventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsKeyboardFocusWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnIsKeyboardFocusWithinChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsKeyboardFocusWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnIsKeyboardFocusedChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsKeyboardFocusedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnIsKeyboardFocusedChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsKeyboardFocusedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnIsMouseCaptureWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsMouseCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnIsMouseCaptureWithinChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsMouseCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnIsMouseCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsMouseCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnIsMouseCapturedChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsMouseCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnIsMouseDirectlyOverChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsMouseDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnIsMouseDirectlyOverChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsMouseDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnIsStylusCaptureWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsStylusCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnIsStylusCaptureWithinChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsStylusCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnIsStylusCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsStylusCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnIsStylusCapturedChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsStylusCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnIsStylusDirectlyOverChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnIsStylusDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnIsStylusDirectlyOverChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnIsStylusDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnKeyDownKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnKeyUp(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnKeyUpKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnLostFocusRoutedEventArgs">
+            <summary>Sets the stub of UIElement.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnLostKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnLostMouseCaptureMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnLostStylusCapture(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnLostStylusCaptureStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnLostStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnLostTouchCapture(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnLostTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnLostTouchCaptureTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnLostTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnManipulationBoundaryFeedback(System.Windows.Input.ManipulationBoundaryFeedbackEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationBoundaryFeedback(ManipulationBoundaryFeedbackEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnManipulationBoundaryFeedbackManipulationBoundaryFeedbackEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationBoundaryFeedback(ManipulationBoundaryFeedbackEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnManipulationCompleted(System.Windows.Input.ManipulationCompletedEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnManipulationCompletedManipulationCompletedEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnManipulationDelta(System.Windows.Input.ManipulationDeltaEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnManipulationDeltaManipulationDeltaEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnManipulationInertiaStarting(System.Windows.Input.ManipulationInertiaStartingEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationInertiaStarting(ManipulationInertiaStartingEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnManipulationInertiaStartingManipulationInertiaStartingEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationInertiaStarting(ManipulationInertiaStartingEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnManipulationStarted(System.Windows.Input.ManipulationStartedEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnManipulationStartedManipulationStartedEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnManipulationStarting(System.Windows.Input.ManipulationStartingEventArgs)">
+            <summary>Sets the stub of UIElement.OnManipulationStarting(ManipulationStartingEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnManipulationStartingManipulationStartingEventArgs">
+            <summary>Sets the stub of UIElement.OnManipulationStarting(ManipulationStartingEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseDoubleClickMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseEnterMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseLeaveMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseLeftButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseLeftButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseMoveMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseRightButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseRightButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>Sets the stub of UIElement.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnMouseWheelMouseWheelEventArgs">
+            <summary>Sets the stub of UIElement.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewDragEnter(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewDragEnterDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewDragLeave(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewDragLeaveDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewDragOver(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewDragOverDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewDrop(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewDropDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewGiveFeedback(System.Windows.GiveFeedbackEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewGotKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewKeyDownKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewKeyUp(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewKeyUpKeyEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewLostKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnPreviewMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseDoubleClickMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnPreviewMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseLeftButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseLeftButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseMoveMouseEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseRightButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseRightButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseUpMouseButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewMouseWheelMouseWheelEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewQueryContinueDrag(System.Windows.QueryContinueDragEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewQueryContinueDragQueryContinueDragEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusButtonDown(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusButtonDownStylusButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusButtonUp(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusButtonUpStylusButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusDown(System.Windows.Input.StylusDownEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusDownStylusDownEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusInAirMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusInAirMoveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusInRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusInRangeStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusMoveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusOutOfRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusOutOfRangeStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusSystemGesture(System.Windows.Input.StylusSystemGestureEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusSystemGestureStylusSystemGestureEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusUp(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewStylusUpStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewTextInputTextCompositionEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewTouchDown(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewTouchDownTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewTouchMove(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewTouchMoveTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPreviewTouchUp(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnPreviewTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPreviewTouchUpTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnPreviewTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnPropertyChangedDependencyPropertyChangedEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnQueryContinueDrag(System.Windows.QueryContinueDragEventArgs)">
+            <summary>Sets the stub of UIElement.OnQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnQueryContinueDragQueryContinueDragEventArgs">
+            <summary>Sets the stub of UIElement.OnQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnQueryCursor(System.Windows.Input.QueryCursorEventArgs)">
+            <summary>Sets the stub of UIElement.OnQueryCursor(QueryCursorEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnQueryCursorQueryCursorEventArgs">
+            <summary>Sets the stub of UIElement.OnQueryCursor(QueryCursorEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnRender(System.Windows.Media.DrawingContext)">
+            <summary>Sets the stub of UIElement.OnRender(DrawingContext drawingContext)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnRenderDrawingContext">
+            <summary>Sets the stub of UIElement.OnRender(DrawingContext drawingContext)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+            <summary>Sets the stub of FrameworkElement.OnRenderSizeChanged(SizeChangedInfo sizeInfo)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnRenderSizeChangedSizeChangedInfo">
+            <summary>Sets the stub of FrameworkElement.OnRenderSizeChanged(SizeChangedInfo sizeInfo)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStyleChanged(System.Windows.Style,System.Windows.Style)">
+            <summary>Sets the stub of FrameworkElement.OnStyleChanged(Style oldStyle, Style newStyle)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStyleChangedStyleStyle">
+            <summary>Sets the stub of FrameworkElement.OnStyleChanged(Style oldStyle, Style newStyle)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusButtonDown(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusButtonDownStylusButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusButtonUp(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusButtonUpStylusButtonEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusDown(System.Windows.Input.StylusDownEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusDownStylusDownEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusEnter(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusEnter(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusEnterStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusEnter(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusInAirMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusInAirMoveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusInRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusInRangeStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusLeave(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusLeave(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusLeaveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusLeave(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusMoveStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusOutOfRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusOutOfRangeStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusSystemGesture(System.Windows.Input.StylusSystemGestureEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusSystemGestureStylusSystemGestureEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnStylusUp(System.Windows.Input.StylusEventArgs)">
+            <summary>Sets the stub of UIElement.OnStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnStylusUpStylusEventArgs">
+            <summary>Sets the stub of UIElement.OnStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)">
+            <summary>Sets the stub of Control.OnTemplateChanged(ControlTemplate oldTemplate, ControlTemplate newTemplate)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnTemplateChangedControlTemplateControlTemplate">
+            <summary>Sets the stub of Control.OnTemplateChanged(ControlTemplate oldTemplate, ControlTemplate newTemplate)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of UIElement.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnTextInputTextCompositionEventArgs">
+            <summary>Sets the stub of UIElement.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnToolTipClosing(System.Windows.Controls.ToolTipEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnToolTipClosing(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnToolTipClosingToolTipEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnToolTipClosing(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnToolTipOpening(System.Windows.Controls.ToolTipEventArgs)">
+            <summary>Sets the stub of FrameworkElement.OnToolTipOpening(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnToolTipOpeningToolTipEventArgs">
+            <summary>Sets the stub of FrameworkElement.OnToolTipOpening(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnTouchDown(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnTouchDownTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnTouchEnter(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchEnter(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnTouchEnterTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchEnter(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnTouchLeave(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchLeave(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnTouchLeaveTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchLeave(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnTouchMove(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnTouchMoveTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnTouchUp(System.Windows.Input.TouchEventArgs)">
+            <summary>Sets the stub of UIElement.OnTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnTouchUpTouchEventArgs">
+            <summary>Sets the stub of UIElement.OnTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)">
+            <summary>Sets the stub of Visual.OnVisualChildrenChanged(DependencyObject visualAdded, DependencyObject visualRemoved)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnVisualChildrenChangedDependencyObjectDependencyObject">
+            <summary>Sets the stub of Visual.OnVisualChildrenChanged(DependencyObject visualAdded, DependencyObject visualRemoved)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.OnVisualParentChanged(System.Windows.DependencyObject)">
+            <summary>Sets the stub of FrameworkElement.OnVisualParentChanged(DependencyObject oldParent)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.OnVisualParentChangedDependencyObject">
+            <summary>Sets the stub of FrameworkElement.OnVisualParentChanged(DependencyObject oldParent)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.ParentLayoutInvalidated(System.Windows.UIElement)">
+            <summary>Sets the stub of FrameworkElement.ParentLayoutInvalidated(UIElement child)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.ParentLayoutInvalidatedUIElement">
+            <summary>Sets the stub of FrameworkElement.ParentLayoutInvalidated(UIElement child)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.ShouldSerializeContent">
+            <summary>Sets the stub of ContentControl.ShouldSerializeContent()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.ShouldSerializeContent01">
+            <summary>Sets the stub of ContentControl.ShouldSerializeContent()</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.ShouldSerializeProperty(System.Windows.DependencyProperty)">
+            <summary>Sets the stub of DependencyObject.ShouldSerializeProperty(DependencyProperty dp)</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.ShouldSerializePropertyDependencyProperty">
+            <summary>Sets the stub of DependencyObject.ShouldSerializeProperty(DependencyProperty dp)</summary>
+        </member>
+        <member name="M:WpfUserControls.Fakes.StubWrapHost.ToString">
+            <summary>Sets the stub of Control.ToString()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.ToString01">
+            <summary>Sets the stub of Control.ToString()</summary>
+        </member>
+        <member name="F:WpfUserControls.Fakes.StubWrapHost.VisualChildrenCountGet">
+            <summary>Sets the stub of FrameworkElement.get_VisualChildrenCount()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubWrapHost.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubWrapHost.HandlesScrolling">
+            <summary>Sets the stub of Control.get_HandlesScrolling()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubWrapHost.HasEffectiveKeyboardFocus">
+            <summary>Sets the stub of UIElement.get_HasEffectiveKeyboardFocus()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubWrapHost.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubWrapHost.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubWrapHost.IsEnabledCore">
+            <summary>Sets the stub of UIElement.get_IsEnabledCore()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubWrapHost.LogicalChildren">
+            <summary>Sets the stub of ContentControl.get_LogicalChildren()</summary>
+        </member>
+        <member name="P:WpfUserControls.Fakes.StubWrapHost.VisualChildrenCount">
+            <summary>Sets the stub of FrameworkElement.get_VisualChildrenCount()</summary>
+        </member>
+    </members>
+</doc>

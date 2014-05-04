@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:wpfUserControls="clr-namespace:WpfUserControls;assembly=WpfUserControls"
+                    xmlns:vm="clr-namespace:ViewModelClassLibrary;assembly=ViewModelClassLibrary">
+
+    <DataTemplate DataType="{x:Type vm:ScoreViewModel}">
+        <wpfUserControls:ScoreView />
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type vm:GameFieldViewModel}">
+        <wpfUserControls:WrapHost />
+    </DataTemplate>
+</ResourceDictionary>

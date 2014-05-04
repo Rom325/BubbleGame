@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ViewModelClassLibrary.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimBubble">
+            <summary>Shim type of ViewModelClassLibrary.Bubble</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubble.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubble.#ctor(ViewModelClassLibrary.Bubble)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubble.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubble.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubble.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubble.ColorGet">
+            <summary>Sets the shim of Bubble.get_Color()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubble.ColorSetInt32">
+            <summary>Sets the shim of Bubble.set_Color(Int32 value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubble.ConstructorInt32">
+            <summary>Sets the shim of Bubble.Bubble(Int32 color)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimBubble.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubble.AllInstances.ColorGet">
+            <summary>Sets the shim of Bubble.get_Color()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubble.AllInstances.ColorSetInt32">
+            <summary>Sets the shim of Bubble.set_Color(Int32 value)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimBubbleCollection">
+            <summary>Shim type of ViewModelClassLibrary.BubbleCollection</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.#ctor(ViewModelClassLibrary.BubbleCollection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.Collections.Specialized.INotifyCollectionChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.Collections.IList)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.ICollection{ViewModelClassLibrary.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.IEnumerable{ViewModelClassLibrary.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.IList{ViewModelClassLibrary.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.IReadOnlyCollection{ViewModelClassLibrary.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Bind(System.Collections.Generic.IReadOnlyList{ViewModelClassLibrary.Bubble})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleCollection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleCollection.ConstructorUInt32IBubbleFactory">
+            <summary>Sets the shim of BubbleCollection.BubbleCollection(UInt32 length, IBubbleFactory bubbleFactory)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleCollection.DestroyIEnumerableOfInt32">
+            <summary>Sets the shim of BubbleCollection.Destroy(IEnumerable`1&lt;Int32&gt; indexes)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleCollection.RefillInt32">
+            <summary>Sets the shim of BubbleCollection.Refill(Int32 length)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleCollection._Destroyb__0Int32">
+            <summary>Sets the shim of BubbleCollection.&lt;Destroy&gt;b__0(Int32 _)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimBubbleCollection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleCollection.AllInstances.DestroyIEnumerableOfInt32">
+            <summary>Sets the shim of BubbleCollection.Destroy(IEnumerable`1&lt;Int32&gt; indexes)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleCollection.AllInstances.RefillInt32">
+            <summary>Sets the shim of BubbleCollection.Refill(Int32 length)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimBubbleFactory">
+            <summary>Shim type of ViewModelClassLibrary.BubbleFactory</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleFactory.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleFactory.#ctor(ViewModelClassLibrary.BubbleFactory)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimBubbleFactory.Bind(ViewModelClassLibrary.IBubbleFactory)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleFactory.Constructor">
+            <summary>Sets the shim of BubbleFactory.BubbleFactory()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleFactory.CreateUInt32">
+            <summary>Sets the shim of BubbleFactory.Create(UInt32 collectionLength)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleFactory.NewRandomBubble">
+            <summary>Sets the shim of BubbleFactory.NewRandomBubble()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleFactory._Createb__0Int32">
+            <summary>Sets the shim of BubbleFactory.&lt;Create&gt;b__0(Int32 _)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimBubbleFactory.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleFactory.AllInstances.CreateUInt32">
+            <summary>Sets the shim of BubbleFactory.Create(UInt32 collectionLength)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleFactory.AllInstances.NewRandomBubble">
+            <summary>Sets the shim of BubbleFactory.NewRandomBubble()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimBubbleFactory.AllInstances._Createb__0Int32">
+            <summary>Sets the shim of BubbleFactory.&lt;Create&gt;b__0(Int32 _)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimGameField">
+            <summary>Shim type of ViewModelClassLibrary.GameField</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimGameField.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimGameField.#ctor(ViewModelClassLibrary.GameField)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimGameField.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimGameField.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.BubblesGet">
+            <summary>Sets the shim of GameField.get_Bubbles()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.BubblesSetBubbleCollection">
+            <summary>Sets the shim of GameField.set_Bubbles(BubbleCollection value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.ColsCountGet">
+            <summary>Sets the shim of GameField.get_ColsCount()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.ColsCountSetByte">
+            <summary>Sets the shim of GameField.set_ColsCount(Byte value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.ConstructorByteByteIBubbleFactory">
+            <summary>Sets the shim of GameField.GameField(Byte rowsCount, Byte colsCount, IBubbleFactory bubbleFactory)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.GetColoredChainInt32">
+            <summary>Sets the shim of GameField.GetColoredChain(Int32 currentPosition)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.GetNeighborsInt32ListOfInt32">
+            <summary>Sets the shim of GameField.GetNeighbors(Int32 currentPosition, List`1&lt;Int32&gt; visited)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.IsInFirstColumnInt32">
+            <summary>Sets the shim of GameField.IsInFirstColumn(Int32 position)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.IsInLastColumnInt32">
+            <summary>Sets the shim of GameField.IsInLastColumn(Int32 position)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.IsOnFirstRowInt32">
+            <summary>Sets the shim of GameField.IsOnFirstRow(Int32 position)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.IsOnLastRowInt32">
+            <summary>Sets the shim of GameField.IsOnLastRow(Int32 position)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.RowsCountGet">
+            <summary>Sets the shim of GameField.get_RowsCount()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.RowsCountSetByte">
+            <summary>Sets the shim of GameField.set_RowsCount(Byte value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField._ctorb__0Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__0(Int32 i)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField._ctorb__1Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__1(Int32 i)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField._ctorb__2Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__2(Int32 i)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField._ctorb__3Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__3(Int32 i)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.BubblesGet">
+            <summary>Sets the shim of GameField.get_Bubbles()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.BubblesSetBubbleCollection">
+            <summary>Sets the shim of GameField.set_Bubbles(BubbleCollection value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.ColsCountGet">
+            <summary>Sets the shim of GameField.get_ColsCount()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.ColsCountSetByte">
+            <summary>Sets the shim of GameField.set_ColsCount(Byte value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.GetColoredChainInt32">
+            <summary>Sets the shim of GameField.GetColoredChain(Int32 currentPosition)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.GetNeighborsInt32ListOfInt32">
+            <summary>Sets the shim of GameField.GetNeighbors(Int32 currentPosition, List`1&lt;Int32&gt; visited)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.IsInFirstColumnInt32">
+            <summary>Sets the shim of GameField.IsInFirstColumn(Int32 position)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.IsInLastColumnInt32">
+            <summary>Sets the shim of GameField.IsInLastColumn(Int32 position)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.IsOnFirstRowInt32">
+            <summary>Sets the shim of GameField.IsOnFirstRow(Int32 position)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.IsOnLastRowInt32">
+            <summary>Sets the shim of GameField.IsOnLastRow(Int32 position)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.RowsCountGet">
+            <summary>Sets the shim of GameField.get_RowsCount()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances.RowsCountSetByte">
+            <summary>Sets the shim of GameField.set_RowsCount(Byte value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances._ctorb__0Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__0(Int32 i)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances._ctorb__1Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__1(Int32 i)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances._ctorb__2Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__2(Int32 i)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimGameField.AllInstances._ctorb__3Int32">
+            <summary>Sets the shim of GameField.&lt;.ctor&gt;b__3(Int32 i)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimRelayCommand">
+            <summary>Shim type of ViewModelClassLibrary.RelayCommand</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimRelayCommand.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimRelayCommand.#ctor(ViewModelClassLibrary.RelayCommand)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimRelayCommand.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimRelayCommand.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimRelayCommand.Bind(System.Windows.Input.ICommand)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.CanExecuteChangedAddEventHandler">
+            <summary>Sets the shim of RelayCommand.add_CanExecuteChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.CanExecuteChangedRemoveEventHandler">
+            <summary>Sets the shim of RelayCommand.remove_CanExecuteChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.CanExecuteObject">
+            <summary>Sets the shim of RelayCommand.CanExecute(Object parameter)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.ConstructorActionOfObject">
+            <summary>Sets the shim of RelayCommand.RelayCommand(Action`1&lt;Object&gt; action)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.ExecuteObject">
+            <summary>Sets the shim of RelayCommand.Execute(Object parameter)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimRelayCommand.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.AllInstances.CanExecuteChangedAddEventHandler">
+            <summary>Sets the shim of RelayCommand.add_CanExecuteChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.AllInstances.CanExecuteChangedRemoveEventHandler">
+            <summary>Sets the shim of RelayCommand.remove_CanExecuteChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.AllInstances.CanExecuteObject">
+            <summary>Sets the shim of RelayCommand.CanExecute(Object parameter)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimRelayCommand.AllInstances.ExecuteObject">
+            <summary>Sets the shim of RelayCommand.Execute(Object parameter)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimScoreViewModel">
+            <summary>Shim type of ViewModelClassLibrary.ScoreViewModel</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimScoreViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimScoreViewModel.#ctor(ViewModelClassLibrary.ScoreViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimScoreViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimScoreViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimScoreViewModel.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimScoreViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimScoreViewModel.Constructor">
+            <summary>Sets the shim of ScoreViewModel.ScoreViewModel()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimScoreViewModel.ResetScore">
+            <summary>Sets the shim of ScoreViewModel.ResetScore()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimScoreViewModel.ScoreGet">
+            <summary>Sets the shim of ScoreViewModel.get_Score()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimScoreViewModel.ScoreSetInt32">
+            <summary>Sets the shim of ScoreViewModel.set_Score(Int32 value)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimScoreViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimScoreViewModel.AllInstances.ResetScore">
+            <summary>Sets the shim of ScoreViewModel.ResetScore()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimScoreViewModel.AllInstances.ScoreGet">
+            <summary>Sets the shim of ScoreViewModel.get_Score()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimScoreViewModel.AllInstances.ScoreSetInt32">
+            <summary>Sets the shim of ScoreViewModel.set_Score(Int32 value)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimViewModelBase">
+            <summary>Shim type of ViewModelClassLibrary.ViewModelBase</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimViewModelBase.#ctor(ViewModelClassLibrary.ViewModelBase)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimViewModelBase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimViewModelBase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.ShimViewModelBase.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.Constructor">
+            <summary>Sets the shim of ViewModelBase.ViewModelBase()</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.OnPropertyChangedString">
+            <summary>Sets the shim of ViewModelBase.OnPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of ViewModelBase.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of ViewModelBase.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.VerifyPropertyNameString">
+            <summary>Sets the shim of ViewModelBase.VerifyPropertyName(String propertyName)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.ShimViewModelBase.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.AllInstances.OnPropertyChangedString">
+            <summary>Sets the shim of ViewModelBase.OnPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.AllInstances.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of ViewModelBase.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.AllInstances.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of ViewModelBase.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.ShimViewModelBase.AllInstances.VerifyPropertyNameString">
+            <summary>Sets the shim of ViewModelBase.VerifyPropertyName(String propertyName)</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.StubBubble">
+            <summary>Stub type of ViewModelClassLibrary.Bubble</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubble.#ctor(System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubble.InitializeStub">
+            <summary>Initializes a new instance of type StubBubble</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubBubble.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubBubble.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubBubble.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.StubBubbleCollection">
+            <summary>Stub type of ViewModelClassLibrary.BubbleCollection</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleCollection.#ctor(System.UInt32,ViewModelClassLibrary.IBubbleFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleCollection.ClearItems">
+            <summary>Sets the stub of ObservableCollection`1.ClearItems()</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubBubbleCollection.ClearItems01">
+            <summary>Sets the stub of ObservableCollection`1.ClearItems()</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleCollection.InitializeStub">
+            <summary>Initializes a new instance of type StubBubbleCollection</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleCollection.InsertItem(System.Int32,ViewModelClassLibrary.Bubble)">
+            <summary>Sets the stub of ObservableCollection`1.InsertItem(Int32 index, !0 item)</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubBubbleCollection.InsertItemInt32Bubble">
+            <summary>Sets the stub of ObservableCollection`1.InsertItem(Int32 index, !0 item)</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleCollection.MoveItem(System.Int32,System.Int32)">
+            <summary>Sets the stub of ObservableCollection`1.MoveItem(Int32 oldIndex, Int32 newIndex)</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubBubbleCollection.MoveItemInt32Int32">
+            <summary>Sets the stub of ObservableCollection`1.MoveItem(Int32 oldIndex, Int32 newIndex)</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleCollection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>Sets the stub of ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubBubbleCollection.OnCollectionChangedNotifyCollectionChangedEventArgs">
+            <summary>Sets the stub of ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleCollection.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>Sets the stub of ObservableCollection`1.OnPropertyChanged(PropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubBubbleCollection.OnPropertyChangedPropertyChangedEventArgs">
+            <summary>Sets the stub of ObservableCollection`1.OnPropertyChanged(PropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleCollection.RemoveItem(System.Int32)">
+            <summary>Sets the stub of ObservableCollection`1.RemoveItem(Int32 index)</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubBubbleCollection.RemoveItemInt32">
+            <summary>Sets the stub of ObservableCollection`1.RemoveItem(Int32 index)</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleCollection.SetItem(System.Int32,ViewModelClassLibrary.Bubble)">
+            <summary>Sets the stub of ObservableCollection`1.SetItem(Int32 index, !0 item)</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubBubbleCollection.SetItemInt32Bubble">
+            <summary>Sets the stub of ObservableCollection`1.SetItem(Int32 index, !0 item)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubBubbleCollection.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubBubbleCollection.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubBubbleCollection.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.StubBubbleFactory">
+            <summary>Stub type of ViewModelClassLibrary.BubbleFactory</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleFactory.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubBubbleFactory.InitializeStub">
+            <summary>Initializes a new instance of type StubBubbleFactory</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubBubbleFactory.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubBubbleFactory.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubBubbleFactory.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.StubGameField">
+            <summary>Stub type of ViewModelClassLibrary.GameField</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubGameField.#ctor(System.Byte,System.Byte,ViewModelClassLibrary.IBubbleFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubGameField.InitializeStub">
+            <summary>Initializes a new instance of type StubGameField</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubGameField.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubGameField.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubGameField.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.StubIBubbleFactory">
+            <summary>Stub type of ViewModelClassLibrary.IBubbleFactory</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubIBubbleFactory.#ctor">
+            <summary>Initializes a new instance of type StubIBubbleFactory</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubIBubbleFactory.CreateUInt32">
+            <summary>Sets the stub of IBubbleFactory.Create(UInt32 collectionLength)</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubIBubbleFactory.NewRandomBubble">
+            <summary>Sets the stub of IBubbleFactory.NewRandomBubble()</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubIBubbleFactory.vmcl::ViewModelClassLibrary#IBubbleFactory#Create(System.UInt32)">
+            <summary>Sets the stub of IBubbleFactory.Create(UInt32 collectionLength)</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubIBubbleFactory.vmcl::ViewModelClassLibrary#IBubbleFactory#NewRandomBubble">
+            <summary>Sets the stub of IBubbleFactory.NewRandomBubble()</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.StubRelayCommand">
+            <summary>Stub type of ViewModelClassLibrary.RelayCommand</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubRelayCommand.#ctor(System.Action{System.Object})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubRelayCommand.InitializeStub">
+            <summary>Initializes a new instance of type StubRelayCommand</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubRelayCommand.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubRelayCommand.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubRelayCommand.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.StubScoreViewModel">
+            <summary>Stub type of ViewModelClassLibrary.ScoreViewModel</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubScoreViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubScoreViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubScoreViewModel</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubScoreViewModel.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of ViewModelBase.OnPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubScoreViewModel.OnPropertyChangedString">
+            <summary>Sets the stub of ViewModelBase.OnPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubScoreViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubScoreViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubScoreViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ViewModelClassLibrary.Fakes.StubViewModelBase">
+            <summary>Stub type of ViewModelClassLibrary.ViewModelBase</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubViewModelBase.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubViewModelBase.InitializeStub">
+            <summary>Initializes a new instance of type StubViewModelBase</summary>
+        </member>
+        <member name="M:ViewModelClassLibrary.Fakes.StubViewModelBase.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of ViewModelBase.OnPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="F:ViewModelClassLibrary.Fakes.StubViewModelBase.OnPropertyChangedString">
+            <summary>Sets the stub of ViewModelBase.OnPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubViewModelBase.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubViewModelBase.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ViewModelClassLibrary.Fakes.StubViewModelBase.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
